@@ -1,0 +1,4041 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190507 10:51:35.832" generator="Robot 3.1.1 (Python 2.7.13 on win32)">
+<suite source="C:\development\robot-scripts\Assignment\tests" id="s1" name="Tests">
+<suite source="C:\development\robot-scripts\Assignment\tests\Suite1-register.robot" id="s1-s1" name="Suite1-register">
+<test id="s1-s1-t1" name="Verify user register successfully with valid data">
+<kw type="setup" name="Begin Registration Test" library="common">
+<kw name="Open Web Browser" library="helpers">
+<arguments>
+<arg>${registerPage}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190507 10:51:36.455" level="INFO">Opening browser 'chrome' to base url 'https://www.phptravels.net/register'.</msg>
+<status status="PASS" endtime="20190507 10:51:48.013" starttime="20190507 10:51:36.455"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190507 10:51:48.222" starttime="20190507 10:51:48.014"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:51:48.222" starttime="20190507 10:51:36.454"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:51:48.222" starttime="20190507 10:51:36.454"></status>
+</kw>
+<kw name="Input Registeration Form Fields" library="register">
+<arguments>
+<arg>${validFirstName}</arg>
+<arg>@{validLastName}[0]</arg>
+<arg>${validMobileNumber}</arg>
+<arg>${validEmail}</arg>
+<arg>@{validPassword}[0]</arg>
+<arg>@{validConfirmPassword}[0]</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${firstNameField}</arg>
+<arg>${firstNameValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:51:48.229" level="INFO">Typing text 'Salma' into text field 'firstname'.</msg>
+<status status="PASS" endtime="20190507 10:51:48.401" starttime="20190507 10:51:48.228"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${lastNameField}</arg>
+<arg>${lastNameValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:51:48.402" level="INFO">Typing text 'Badr' into text field 'lastname'.</msg>
+<status status="PASS" endtime="20190507 10:51:48.510" starttime="20190507 10:51:48.402"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${mobileNumberField}</arg>
+<arg>${mobileNumberValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:51:48.511" level="INFO">Typing text '01023113090' into text field 'phone'.</msg>
+<status status="PASS" endtime="20190507 10:51:48.677" starttime="20190507 10:51:48.510"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${emailField}</arg>
+<arg>${emailValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:51:48.678" level="INFO">Typing text 'testing@gmail.com' into text field 'email'.</msg>
+<status status="PASS" endtime="20190507 10:51:48.868" starttime="20190507 10:51:48.677"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${passwordField}</arg>
+<arg>${passwordValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:51:48.869" level="INFO">Typing text 'SalmaBadr#' into text field 'password'.</msg>
+<status status="PASS" endtime="20190507 10:51:48.997" starttime="20190507 10:51:48.869"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${confirmPasswordField}</arg>
+<arg>${confirmPasswordValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:51:48.998" level="INFO">Typing text 'SalmaBadr#' into text field 'confirmpassword'.</msg>
+<status status="PASS" endtime="20190507 10:51:49.128" starttime="20190507 10:51:48.998"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:51:49.128" starttime="20190507 10:51:48.226"></status>
+</kw>
+<kw name="Click On Sign Up" library="register">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${registerButton}</arg>
+</arguments>
+<msg timestamp="20190507 10:51:49.130" level="INFO">Clicking button 'xpath=//*[@id="headersignupform"]/div[9]/button'.</msg>
+<status status="PASS" endtime="20190507 10:51:49.246" starttime="20190507 10:51:49.129"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 10:51:59.247" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 10:51:59.247" starttime="20190507 10:51:49.247"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:51:59.247" starttime="20190507 10:51:49.129"></status>
+</kw>
+<kw name="Check Current URL" library="helpers">
+<arguments>
+<arg>${loginPage}</arg>
+</arguments>
+<kw name="Get Location" library="SeleniumLibrary">
+<doc>Returns the current browser URL.</doc>
+<assign>
+<var>${currentURL}</var>
+</assign>
+<msg timestamp="20190507 10:52:03.091" level="INFO">${currentURL} = https://www.phptravels.net/account/</msg>
+<status status="PASS" endtime="20190507 10:52:03.092" starttime="20190507 10:51:59.249"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${currentURL}</arg>
+</arguments>
+<msg timestamp="20190507 10:52:03.096" level="FAIL">https://www.phptravels.net/login != https://www.phptravels.net/account/</msg>
+<status status="FAIL" endtime="20190507 10:52:03.097" starttime="20190507 10:52:03.093"></status>
+</kw>
+<status status="FAIL" endtime="20190507 10:52:03.098" starttime="20190507 10:51:59.248"></status>
+</kw>
+<kw type="teardown" name="End Registration Test" library="common">
+<kw name="Capture screenshot" library="helpers">
+<arguments>
+<arg>register</arg>
+</arguments>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<msg timestamp="20190507 10:52:03.835" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Results/Screenshots/register/Verify%20user%20register%20successfully%20with%20valid%20data-Failed.png"&gt;&lt;img src="../Results/Screenshots/register/Verify%20user%20register%20successfully%20with%20valid%20data-Failed.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190507 10:52:03.835" starttime="20190507 10:52:03.108"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:52:03.835" starttime="20190507 10:52:03.107"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:52:03.835" starttime="20190507 10:52:03.105"></status>
+</kw>
+<kw name="Close Web Browser" library="helpers">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190507 10:52:07.122" starttime="20190507 10:52:03.836"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:52:07.123" starttime="20190507 10:52:03.835"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:52:07.123" starttime="20190507 10:52:03.102"></status>
+</kw>
+<doc>Register user with valid data</doc>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="FAIL" endtime="20190507 10:52:07.125" critical="yes" starttime="20190507 10:51:36.453">https://www.phptravels.net/login != https://www.phptravels.net/account/</status>
+</test>
+<test id="s1-s1-t2" name="Verify email is unique for each user">
+<kw type="setup" name="Begin Registration Test" library="common">
+<kw name="Open Web Browser" library="helpers">
+<arguments>
+<arg>${registerPage}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190507 10:52:07.145" level="INFO">Opening browser 'chrome' to base url 'https://www.phptravels.net/register'.</msg>
+<status status="PASS" endtime="20190507 10:52:18.978" starttime="20190507 10:52:07.143"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190507 10:52:19.143" starttime="20190507 10:52:18.979"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:52:19.143" starttime="20190507 10:52:07.140"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:52:19.143" starttime="20190507 10:52:07.138"></status>
+</kw>
+<kw name="Input Registeration Form Fields" library="register">
+<arguments>
+<arg>${validFirstName}</arg>
+<arg>@{validLastName}[0]</arg>
+<arg>${validMobileNumber}</arg>
+<arg>${validEmail}</arg>
+<arg>@{validPassword}[0]</arg>
+<arg>@{validConfirmPassword}[0]</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${firstNameField}</arg>
+<arg>${firstNameValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:52:19.146" level="INFO">Typing text 'Salma' into text field 'firstname'.</msg>
+<status status="PASS" endtime="20190507 10:52:19.267" starttime="20190507 10:52:19.146"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${lastNameField}</arg>
+<arg>${lastNameValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:52:19.268" level="INFO">Typing text 'Badr' into text field 'lastname'.</msg>
+<status status="PASS" endtime="20190507 10:52:19.392" starttime="20190507 10:52:19.268"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${mobileNumberField}</arg>
+<arg>${mobileNumberValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:52:19.393" level="INFO">Typing text '01023113090' into text field 'phone'.</msg>
+<status status="PASS" endtime="20190507 10:52:19.638" starttime="20190507 10:52:19.393"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${emailField}</arg>
+<arg>${emailValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:52:19.639" level="INFO">Typing text 'testing@gmail.com' into text field 'email'.</msg>
+<status status="PASS" endtime="20190507 10:52:19.906" starttime="20190507 10:52:19.638"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${passwordField}</arg>
+<arg>${passwordValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:52:19.908" level="INFO">Typing text 'SalmaBadr#' into text field 'password'.</msg>
+<status status="PASS" endtime="20190507 10:52:20.093" starttime="20190507 10:52:19.907"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${confirmPasswordField}</arg>
+<arg>${confirmPasswordValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:52:20.094" level="INFO">Typing text 'SalmaBadr#' into text field 'confirmpassword'.</msg>
+<status status="PASS" endtime="20190507 10:52:20.252" starttime="20190507 10:52:20.093"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:52:20.252" starttime="20190507 10:52:19.144"></status>
+</kw>
+<kw name="Click On Sign Up" library="register">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${registerButton}</arg>
+</arguments>
+<msg timestamp="20190507 10:52:20.253" level="INFO">Clicking button 'xpath=//*[@id="headersignupform"]/div[9]/button'.</msg>
+<status status="PASS" endtime="20190507 10:52:20.336" starttime="20190507 10:52:20.253"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 10:52:30.336" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 10:52:30.337" starttime="20190507 10:52:20.336"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:52:30.338" starttime="20190507 10:52:20.253"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${existedEmailError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 10:52:30.413" level="INFO">Current page contains text 'Email Already Exists'.</msg>
+<status status="PASS" endtime="20190507 10:52:30.413" starttime="20190507 10:52:30.342"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:52:30.414" starttime="20190507 10:52:30.340"></status>
+</kw>
+<kw type="teardown" name="End Registration Test" library="common">
+<kw name="Capture screenshot" library="helpers">
+<arguments>
+<arg>register</arg>
+</arguments>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<status status="PASS" endtime="20190507 10:52:30.420" starttime="20190507 10:52:30.419"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:52:30.421" starttime="20190507 10:52:30.418"></status>
+</kw>
+<kw name="Close Web Browser" library="helpers">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190507 10:52:32.997" starttime="20190507 10:52:30.423"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:52:32.997" starttime="20190507 10:52:30.422"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:52:32.997" starttime="20190507 10:52:30.416"></status>
+</kw>
+<doc>Register with an existing email address</doc>
+<status status="PASS" endtime="20190507 10:52:32.998" critical="yes" starttime="20190507 10:52:07.135"></status>
+</test>
+<test id="s1-s1-t3" name="Verify allowing only Gmail email addresses">
+<kw type="setup" name="Begin Registration Test" library="common">
+<kw name="Open Web Browser" library="helpers">
+<arguments>
+<arg>${registerPage}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190507 10:52:33.005" level="INFO">Opening browser 'chrome' to base url 'https://www.phptravels.net/register'.</msg>
+<status status="PASS" endtime="20190507 10:52:44.772" starttime="20190507 10:52:33.004"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190507 10:52:44.949" starttime="20190507 10:52:44.772"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:52:44.949" starttime="20190507 10:52:33.004"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:52:44.949" starttime="20190507 10:52:33.003"></status>
+</kw>
+<kw name="Input Registeration Form Fields" library="register">
+<arguments>
+<arg>${validFirstName}</arg>
+<arg>@{validLastName}[0]</arg>
+<arg>${validMobileNumber}</arg>
+<arg>@{nonGmail}[0]</arg>
+<arg>@{validPassword}[0]</arg>
+<arg>@{validConfirmPassword}[0]</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${firstNameField}</arg>
+<arg>${firstNameValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:52:44.968" level="INFO">Typing text 'Salma' into text field 'firstname'.</msg>
+<status status="PASS" endtime="20190507 10:52:45.150" starttime="20190507 10:52:44.967"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${lastNameField}</arg>
+<arg>${lastNameValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:52:45.151" level="INFO">Typing text 'Badr' into text field 'lastname'.</msg>
+<status status="PASS" endtime="20190507 10:52:45.255" starttime="20190507 10:52:45.150"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${mobileNumberField}</arg>
+<arg>${mobileNumberValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:52:45.256" level="INFO">Typing text '01023113090' into text field 'phone'.</msg>
+<status status="PASS" endtime="20190507 10:52:45.426" starttime="20190507 10:52:45.256"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${emailField}</arg>
+<arg>${emailValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:52:45.426" level="INFO">Typing text 'testing@hotmail.com' into text field 'email'.</msg>
+<status status="PASS" endtime="20190507 10:52:45.618" starttime="20190507 10:52:45.426"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${passwordField}</arg>
+<arg>${passwordValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:52:45.619" level="INFO">Typing text 'SalmaBadr#' into text field 'password'.</msg>
+<status status="PASS" endtime="20190507 10:52:45.755" starttime="20190507 10:52:45.619"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${confirmPasswordField}</arg>
+<arg>${confirmPasswordValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:52:45.756" level="INFO">Typing text 'SalmaBadr#' into text field 'confirmpassword'.</msg>
+<status status="PASS" endtime="20190507 10:52:45.883" starttime="20190507 10:52:45.756"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:52:45.883" starttime="20190507 10:52:44.965"></status>
+</kw>
+<kw name="Click On Sign Up" library="register">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${registerButton}</arg>
+</arguments>
+<msg timestamp="20190507 10:52:45.884" level="INFO">Clicking button 'xpath=//*[@id="headersignupform"]/div[9]/button'.</msg>
+<status status="PASS" endtime="20190507 10:52:45.979" starttime="20190507 10:52:45.884"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 10:52:55.981" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 10:52:55.981" starttime="20190507 10:52:45.981"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:52:55.981" starttime="20190507 10:52:45.884"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${nonGmailError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 10:52:59.928" level="FAIL">Page should have contained text 'Only Gmail email addresses are allowed' but did not.</msg>
+<status status="FAIL" endtime="20190507 10:52:59.929" starttime="20190507 10:52:55.986"></status>
+</kw>
+<status status="FAIL" endtime="20190507 10:52:59.929" starttime="20190507 10:52:55.985"></status>
+</kw>
+<kw type="teardown" name="End Registration Test" library="common">
+<kw name="Capture screenshot" library="helpers">
+<arguments>
+<arg>register</arg>
+</arguments>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<msg timestamp="20190507 10:53:00.613" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Results/Screenshots/register/Verify%20allowing%20only%20Gmail%20email%20addresses-Failed.png"&gt;&lt;img src="../Results/Screenshots/register/Verify%20allowing%20only%20Gmail%20email%20addresses-Failed.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190507 10:53:00.613" starttime="20190507 10:52:59.930"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:53:00.613" starttime="20190507 10:52:59.930"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:53:00.613" starttime="20190507 10:52:59.930"></status>
+</kw>
+<kw name="Close Web Browser" library="helpers">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190507 10:53:03.672" starttime="20190507 10:53:00.614"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:53:03.673" starttime="20190507 10:53:00.614"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:53:03.673" starttime="20190507 10:52:59.929"></status>
+</kw>
+<doc>Register with a non Gmail email address</doc>
+<status status="FAIL" endtime="20190507 10:53:03.676" critical="yes" starttime="20190507 10:52:33.002">Page should have contained text 'Only Gmail email addresses are allowed' but did not.</status>
+</test>
+<test id="s1-s1-t4" name="Verify not accepting invalid email address formats">
+<kw type="setup" name="Begin Registration Test" library="common">
+<kw name="Open Web Browser" library="helpers">
+<arguments>
+<arg>${registerPage}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190507 10:53:03.704" level="INFO">Opening browser 'chrome' to base url 'https://www.phptravels.net/register'.</msg>
+<status status="PASS" endtime="20190507 10:53:15.881" starttime="20190507 10:53:03.702"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190507 10:53:16.055" starttime="20190507 10:53:15.881"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:53:16.056" starttime="20190507 10:53:03.700"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:53:16.056" starttime="20190507 10:53:03.698"></status>
+</kw>
+<kw name="Input Registeration Form Fields" library="register">
+<arguments>
+<arg>${validFirstName}</arg>
+<arg>@{validLastName}[0]</arg>
+<arg>${validMobileNumber}</arg>
+<arg>@{invalidEmail}[1]</arg>
+<arg>@{validPassword}[0]</arg>
+<arg>@{validConfirmPassword}[0]</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${firstNameField}</arg>
+<arg>${firstNameValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:53:16.063" level="INFO">Typing text 'Salma' into text field 'firstname'.</msg>
+<status status="PASS" endtime="20190507 10:53:16.357" starttime="20190507 10:53:16.062"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${lastNameField}</arg>
+<arg>${lastNameValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:53:16.358" level="INFO">Typing text 'Badr' into text field 'lastname'.</msg>
+<status status="PASS" endtime="20190507 10:53:16.610" starttime="20190507 10:53:16.357"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${mobileNumberField}</arg>
+<arg>${mobileNumberValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:53:16.611" level="INFO">Typing text '01023113090' into text field 'phone'.</msg>
+<status status="PASS" endtime="20190507 10:53:16.886" starttime="20190507 10:53:16.610"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${emailField}</arg>
+<arg>${emailValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:53:16.887" level="INFO">Typing text 'salmabadr@gmail@gmail.com' into text field 'email'.</msg>
+<status status="PASS" endtime="20190507 10:53:17.133" starttime="20190507 10:53:16.887"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${passwordField}</arg>
+<arg>${passwordValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:53:17.134" level="INFO">Typing text 'SalmaBadr#' into text field 'password'.</msg>
+<status status="PASS" endtime="20190507 10:53:17.298" starttime="20190507 10:53:17.133"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${confirmPasswordField}</arg>
+<arg>${confirmPasswordValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:53:17.298" level="INFO">Typing text 'SalmaBadr#' into text field 'confirmpassword'.</msg>
+<status status="PASS" endtime="20190507 10:53:17.425" starttime="20190507 10:53:17.298"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:53:17.425" starttime="20190507 10:53:16.060"></status>
+</kw>
+<kw name="Click On Sign Up" library="register">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${registerButton}</arg>
+</arguments>
+<msg timestamp="20190507 10:53:17.427" level="INFO">Clicking button 'xpath=//*[@id="headersignupform"]/div[9]/button'.</msg>
+<status status="PASS" endtime="20190507 10:53:17.537" starttime="20190507 10:53:17.427"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 10:53:27.538" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 10:53:27.539" starttime="20190507 10:53:17.538"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:53:27.540" starttime="20190507 10:53:17.426"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${invalidMailError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 10:53:27.652" level="INFO">Current page contains text 'The Email field must contain a valid email address'.</msg>
+<status status="PASS" endtime="20190507 10:53:27.652" starttime="20190507 10:53:27.545"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:53:27.652" starttime="20190507 10:53:27.543"></status>
+</kw>
+<kw name="Change Field Value" library="helpers">
+<arguments>
+<arg>${emailField}</arg>
+<arg>@{invalidEmail}[2]</arg>
+</arguments>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${fieldLocator}</arg>
+</arguments>
+<status status="PASS" endtime="20190507 10:53:27.736" starttime="20190507 10:53:27.656"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${fieldLocator}</arg>
+<arg>${fieldValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:53:27.737" level="INFO">Typing text 'salmabadr@$%^&amp;.com' into text field 'email'.</msg>
+<status status="PASS" endtime="20190507 10:53:27.954" starttime="20190507 10:53:27.736"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:53:27.955" starttime="20190507 10:53:27.654"></status>
+</kw>
+<kw name="Click On Sign Up" library="register">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${registerButton}</arg>
+</arguments>
+<msg timestamp="20190507 10:53:27.957" level="INFO">Clicking button 'xpath=//*[@id="headersignupform"]/div[9]/button'.</msg>
+<status status="PASS" endtime="20190507 10:53:28.096" starttime="20190507 10:53:27.957"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 10:53:38.097" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 10:53:38.097" starttime="20190507 10:53:28.097"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:53:38.098" starttime="20190507 10:53:27.956"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${invalidMailError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 10:53:38.147" level="INFO">Current page contains text 'The Email field must contain a valid email address'.</msg>
+<status status="PASS" endtime="20190507 10:53:38.148" starttime="20190507 10:53:38.102"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:53:38.148" starttime="20190507 10:53:38.100"></status>
+</kw>
+<kw name="Change Field Value" library="helpers">
+<arguments>
+<arg>${emailField}</arg>
+<arg>@{invalidEmail}[3]</arg>
+</arguments>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${fieldLocator}</arg>
+</arguments>
+<status status="PASS" endtime="20190507 10:53:38.228" starttime="20190507 10:53:38.153"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${fieldLocator}</arg>
+<arg>${fieldValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:53:38.230" level="INFO">Typing text 'salma$%' into text field 'email'.</msg>
+<status status="PASS" endtime="20190507 10:53:38.348" starttime="20190507 10:53:38.229"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:53:38.349" starttime="20190507 10:53:38.150"></status>
+</kw>
+<kw name="Click On Sign Up" library="register">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${registerButton}</arg>
+</arguments>
+<msg timestamp="20190507 10:53:38.350" level="INFO">Clicking button 'xpath=//*[@id="headersignupform"]/div[9]/button'.</msg>
+<status status="PASS" endtime="20190507 10:53:38.437" starttime="20190507 10:53:38.350"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 10:53:48.438" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 10:53:48.438" starttime="20190507 10:53:38.438"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:53:48.438" starttime="20190507 10:53:38.350"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${invalidMailError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 10:53:48.453" level="INFO">Current page contains text 'The Email field must contain a valid email address'.</msg>
+<status status="PASS" endtime="20190507 10:53:48.454" starttime="20190507 10:53:48.440"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:53:48.454" starttime="20190507 10:53:48.439"></status>
+</kw>
+<kw name="Change Field Value" library="helpers">
+<arguments>
+<arg>${emailField}</arg>
+<arg>@{invalidEmail}[4]</arg>
+</arguments>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${fieldLocator}</arg>
+</arguments>
+<status status="PASS" endtime="20190507 10:53:48.488" starttime="20190507 10:53:48.455"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${fieldLocator}</arg>
+<arg>${fieldValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:53:48.489" level="INFO">Typing text 'salma' into text field 'email'.</msg>
+<status status="PASS" endtime="20190507 10:53:48.570" starttime="20190507 10:53:48.489"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:53:48.570" starttime="20190507 10:53:48.454"></status>
+</kw>
+<kw name="Click On Sign Up" library="register">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${registerButton}</arg>
+</arguments>
+<msg timestamp="20190507 10:53:48.572" level="INFO">Clicking button 'xpath=//*[@id="headersignupform"]/div[9]/button'.</msg>
+<status status="PASS" endtime="20190507 10:53:48.672" starttime="20190507 10:53:48.571"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 10:53:58.674" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 10:53:58.675" starttime="20190507 10:53:48.672"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:53:58.677" starttime="20190507 10:53:48.571"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${invalidMailError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 10:53:58.771" level="INFO">Current page contains text 'The Email field must contain a valid email address'.</msg>
+<status status="PASS" endtime="20190507 10:53:58.771" starttime="20190507 10:53:58.686"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:53:58.772" starttime="20190507 10:53:58.681"></status>
+</kw>
+<kw name="Change Field Value" library="helpers">
+<arguments>
+<arg>${emailField}</arg>
+<arg>@{invalidEmail}[5]</arg>
+</arguments>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${fieldLocator}</arg>
+</arguments>
+<status status="PASS" endtime="20190507 10:53:58.832" starttime="20190507 10:53:58.774"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${fieldLocator}</arg>
+<arg>${fieldValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:53:58.833" level="INFO">Typing text 'salma@gmail' into text field 'email'.</msg>
+<status status="PASS" endtime="20190507 10:53:58.972" starttime="20190507 10:53:58.832"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:53:58.972" starttime="20190507 10:53:58.773"></status>
+</kw>
+<kw name="Click On Sign Up" library="register">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${registerButton}</arg>
+</arguments>
+<msg timestamp="20190507 10:53:58.975" level="INFO">Clicking button 'xpath=//*[@id="headersignupform"]/div[9]/button'.</msg>
+<status status="PASS" endtime="20190507 10:53:59.070" starttime="20190507 10:53:58.974"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 10:54:09.071" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 10:54:09.071" starttime="20190507 10:53:59.070"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:54:09.071" starttime="20190507 10:53:58.974"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${invalidMailError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 10:54:09.091" level="INFO">Current page contains text 'The Email field must contain a valid email address'.</msg>
+<status status="PASS" endtime="20190507 10:54:09.091" starttime="20190507 10:54:09.073"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:54:09.092" starttime="20190507 10:54:09.072"></status>
+</kw>
+<kw name="Change Field Value" library="helpers">
+<arguments>
+<arg>${emailField}</arg>
+<arg>@{invalidEmail}[6]</arg>
+</arguments>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${fieldLocator}</arg>
+</arguments>
+<status status="PASS" endtime="20190507 10:54:09.147" starttime="20190507 10:54:09.094"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${fieldLocator}</arg>
+<arg>${fieldValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:54:09.148" level="INFO">Typing text 'salma@.com' into text field 'email'.</msg>
+<status status="PASS" endtime="20190507 10:54:09.242" starttime="20190507 10:54:09.147"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:54:09.242" starttime="20190507 10:54:09.092"></status>
+</kw>
+<kw name="Click On Sign Up" library="register">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${registerButton}</arg>
+</arguments>
+<msg timestamp="20190507 10:54:09.244" level="INFO">Clicking button 'xpath=//*[@id="headersignupform"]/div[9]/button'.</msg>
+<status status="PASS" endtime="20190507 10:54:09.310" starttime="20190507 10:54:09.244"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 10:54:19.312" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 10:54:19.312" starttime="20190507 10:54:09.310"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:54:19.313" starttime="20190507 10:54:09.244"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${invalidMailError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 10:54:19.391" level="INFO">Current page contains text 'The Email field must contain a valid email address'.</msg>
+<status status="PASS" endtime="20190507 10:54:19.391" starttime="20190507 10:54:19.317"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:54:19.392" starttime="20190507 10:54:19.315"></status>
+</kw>
+<kw name="Change Field Value" library="helpers">
+<arguments>
+<arg>${emailField}</arg>
+<arg>@{invalidEmail}[7]</arg>
+</arguments>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${fieldLocator}</arg>
+</arguments>
+<status status="PASS" endtime="20190507 10:54:19.462" starttime="20190507 10:54:19.397"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${fieldLocator}</arg>
+<arg>${fieldValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:54:19.463" level="INFO">Typing text 'salmabadr.com' into text field 'email'.</msg>
+<status status="PASS" endtime="20190507 10:54:19.570" starttime="20190507 10:54:19.462"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:54:19.570" starttime="20190507 10:54:19.393"></status>
+</kw>
+<kw name="Click On Sign Up" library="register">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${registerButton}</arg>
+</arguments>
+<msg timestamp="20190507 10:54:19.571" level="INFO">Clicking button 'xpath=//*[@id="headersignupform"]/div[9]/button'.</msg>
+<status status="PASS" endtime="20190507 10:54:19.644" starttime="20190507 10:54:19.571"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 10:54:29.645" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 10:54:29.646" starttime="20190507 10:54:19.645"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:54:29.647" starttime="20190507 10:54:19.571"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${invalidMailError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 10:54:29.712" level="INFO">Current page contains text 'The Email field must contain a valid email address'.</msg>
+<status status="PASS" endtime="20190507 10:54:29.713" starttime="20190507 10:54:29.653"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:54:29.713" starttime="20190507 10:54:29.649"></status>
+</kw>
+<kw name="Change Field Value" library="helpers">
+<arguments>
+<arg>${emailField}</arg>
+<arg>@{invalidEmail}[8]</arg>
+</arguments>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${fieldLocator}</arg>
+</arguments>
+<status status="PASS" endtime="20190507 10:54:29.762" starttime="20190507 10:54:29.715"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${fieldLocator}</arg>
+<arg>${fieldValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:54:29.764" level="INFO">Typing text '$%&amp;*#*!' into text field 'email'.</msg>
+<status status="PASS" endtime="20190507 10:54:29.921" starttime="20190507 10:54:29.763"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:54:29.922" starttime="20190507 10:54:29.714"></status>
+</kw>
+<kw name="Click On Sign Up" library="register">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${registerButton}</arg>
+</arguments>
+<msg timestamp="20190507 10:54:29.923" level="INFO">Clicking button 'xpath=//*[@id="headersignupform"]/div[9]/button'.</msg>
+<status status="PASS" endtime="20190507 10:54:30.031" starttime="20190507 10:54:29.923"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 10:54:40.031" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 10:54:40.031" starttime="20190507 10:54:30.031"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:54:40.033" starttime="20190507 10:54:29.922"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${invalidMailError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 10:54:40.110" level="INFO">Current page contains text 'The Email field must contain a valid email address'.</msg>
+<status status="PASS" endtime="20190507 10:54:40.111" starttime="20190507 10:54:40.039"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:54:40.112" starttime="20190507 10:54:40.035"></status>
+</kw>
+<kw name="Change Field Value" library="helpers">
+<arguments>
+<arg>${emailField}</arg>
+<arg>@{invalidEmail}[9]</arg>
+</arguments>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${fieldLocator}</arg>
+</arguments>
+<status status="PASS" endtime="20190507 10:54:40.168" starttime="20190507 10:54:40.120"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${fieldLocator}</arg>
+<arg>${fieldValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:54:40.169" level="INFO">Typing text 'salma()@gmail.com' into text field 'email'.</msg>
+<status status="PASS" endtime="20190507 10:54:40.312" starttime="20190507 10:54:40.168"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:54:40.312" starttime="20190507 10:54:40.117"></status>
+</kw>
+<kw name="Click On Sign Up" library="register">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${registerButton}</arg>
+</arguments>
+<msg timestamp="20190507 10:54:40.314" level="INFO">Clicking button 'xpath=//*[@id="headersignupform"]/div[9]/button'.</msg>
+<status status="PASS" endtime="20190507 10:54:40.384" starttime="20190507 10:54:40.313"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 10:54:50.385" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 10:54:50.386" starttime="20190507 10:54:40.384"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:54:50.387" starttime="20190507 10:54:40.313"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${invalidMailError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 10:54:50.467" level="INFO">Current page contains text 'The Email field must contain a valid email address'.</msg>
+<status status="PASS" endtime="20190507 10:54:50.468" starttime="20190507 10:54:50.392"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:54:50.469" starttime="20190507 10:54:50.389"></status>
+</kw>
+<kw type="teardown" name="End Registration Test" library="common">
+<kw name="Capture screenshot" library="helpers">
+<arguments>
+<arg>register</arg>
+</arguments>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<status status="PASS" endtime="20190507 10:54:50.478" starttime="20190507 10:54:50.476"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:54:50.478" starttime="20190507 10:54:50.474"></status>
+</kw>
+<kw name="Close Web Browser" library="helpers">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190507 10:54:53.214" starttime="20190507 10:54:50.482"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:54:53.215" starttime="20190507 10:54:50.479"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:54:53.216" starttime="20190507 10:54:50.472"></status>
+</kw>
+<doc>Register with invalid format for email address</doc>
+<status status="PASS" endtime="20190507 10:54:53.218" critical="yes" starttime="20190507 10:53:03.692"></status>
+</test>
+<test id="s1-s1-t5" name="Verify not accepting special characters in email format before domain name">
+<kw type="setup" name="Begin Registration Test" library="common">
+<kw name="Open Web Browser" library="helpers">
+<arguments>
+<arg>${registerPage}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190507 10:54:53.251" level="INFO">Opening browser 'chrome' to base url 'https://www.phptravels.net/register'.</msg>
+<status status="PASS" endtime="20190507 10:55:07.270" starttime="20190507 10:54:53.247"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190507 10:55:07.406" starttime="20190507 10:55:07.271"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:55:07.406" starttime="20190507 10:54:53.243"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:55:07.406" starttime="20190507 10:54:53.240"></status>
+</kw>
+<kw name="Generate Invalid Test Email" library="helpers">
+<assign>
+<var>${invalidEmail}</var>
+</assign>
+<kw name="Split String" library="String">
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<arguments>
+<arg>${GMAIL}</arg>
+<arg>@</arg>
+</arguments>
+<assign>
+<var>@{words}</var>
+</assign>
+<msg timestamp="20190507 10:55:07.408" level="INFO">@{words} = [ testing | gmail.com ]</msg>
+<status status="PASS" endtime="20190507 10:55:07.408" starttime="20190507 10:55:07.407"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>$&amp;*%^!#</arg>
+</arguments>
+<assign>
+<var>${specialChars}</var>
+</assign>
+<msg timestamp="20190507 10:55:07.408" level="INFO">${specialChars} = $!!*^</msg>
+<status status="PASS" endtime="20190507 10:55:07.408" starttime="20190507 10:55:07.408"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>@{words}[0]${specialChars}@gmail.com</arg>
+</arguments>
+<assign>
+<var>${email}</var>
+</assign>
+<msg timestamp="20190507 10:55:07.409" level="INFO">${email} = testing$!!*^@gmail.com</msg>
+<status status="PASS" endtime="20190507 10:55:07.409" starttime="20190507 10:55:07.409"></status>
+</kw>
+<msg timestamp="20190507 10:55:07.410" level="INFO">${invalidEmail} = testing$!!*^@gmail.com</msg>
+<status status="PASS" endtime="20190507 10:55:07.410" starttime="20190507 10:55:07.407"></status>
+</kw>
+<kw name="Input Registeration Form Fields" library="register">
+<arguments>
+<arg>${validFirstName}</arg>
+<arg>@{validLastName}[0]</arg>
+<arg>${validMobileNumber}</arg>
+<arg>${invalidEmail}</arg>
+<arg>@{validPassword}[0]</arg>
+<arg>@{validConfirmPassword}[0]</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${firstNameField}</arg>
+<arg>${firstNameValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:55:07.412" level="INFO">Typing text 'Salma' into text field 'firstname'.</msg>
+<status status="PASS" endtime="20190507 10:55:07.540" starttime="20190507 10:55:07.412"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${lastNameField}</arg>
+<arg>${lastNameValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:55:07.541" level="INFO">Typing text 'Badr' into text field 'lastname'.</msg>
+<status status="PASS" endtime="20190507 10:55:07.679" starttime="20190507 10:55:07.541"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${mobileNumberField}</arg>
+<arg>${mobileNumberValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:55:07.679" level="INFO">Typing text '01023113090' into text field 'phone'.</msg>
+<status status="PASS" endtime="20190507 10:55:07.935" starttime="20190507 10:55:07.679"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${emailField}</arg>
+<arg>${emailValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:55:07.936" level="INFO">Typing text 'testing$!!*^@gmail.com' into text field 'email'.</msg>
+<status status="PASS" endtime="20190507 10:55:08.421" starttime="20190507 10:55:07.936"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${passwordField}</arg>
+<arg>${passwordValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:55:08.422" level="INFO">Typing text 'SalmaBadr#' into text field 'password'.</msg>
+<status status="PASS" endtime="20190507 10:55:08.651" starttime="20190507 10:55:08.421"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${confirmPasswordField}</arg>
+<arg>${confirmPasswordValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:55:08.652" level="INFO">Typing text 'SalmaBadr#' into text field 'confirmpassword'.</msg>
+<status status="PASS" endtime="20190507 10:55:08.891" starttime="20190507 10:55:08.652"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:55:08.891" starttime="20190507 10:55:07.410"></status>
+</kw>
+<kw name="Click On Sign Up" library="register">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${registerButton}</arg>
+</arguments>
+<msg timestamp="20190507 10:55:08.894" level="INFO">Clicking button 'xpath=//*[@id="headersignupform"]/div[9]/button'.</msg>
+<status status="PASS" endtime="20190507 10:55:09.050" starttime="20190507 10:55:08.893"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 10:55:19.050" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 10:55:19.050" starttime="20190507 10:55:09.050"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:55:19.050" starttime="20190507 10:55:08.892"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${invalidMailError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 10:55:21.838" level="FAIL">Page should have contained text 'The Email field must contain a valid email address' but did not.</msg>
+<status status="FAIL" endtime="20190507 10:55:21.838" starttime="20190507 10:55:19.053"></status>
+</kw>
+<status status="FAIL" endtime="20190507 10:55:21.839" starttime="20190507 10:55:19.052"></status>
+</kw>
+<kw type="teardown" name="End Registration Test" library="common">
+<kw name="Capture screenshot" library="helpers">
+<arguments>
+<arg>register</arg>
+</arguments>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<msg timestamp="20190507 10:55:22.428" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Results/Screenshots/register/Verify%20not%20accepting%20special%20characters%20in%20email%20format%20before%20domain%20name-Failed.png"&gt;&lt;img src="../Results/Screenshots/register/Verify%20not%20accepting%20special%20characters%20in%20email%20format%20before%20domain%20name-Failed.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190507 10:55:22.428" starttime="20190507 10:55:21.843"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:55:22.428" starttime="20190507 10:55:21.843"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:55:22.428" starttime="20190507 10:55:21.841"></status>
+</kw>
+<kw name="Close Web Browser" library="helpers">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190507 10:55:24.939" starttime="20190507 10:55:22.429"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:55:24.940" starttime="20190507 10:55:22.428"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:55:24.940" starttime="20190507 10:55:21.841"></status>
+</kw>
+<doc>Register with invalid email with special characters before domain name</doc>
+<status status="FAIL" endtime="20190507 10:55:24.940" critical="yes" starttime="20190507 10:54:53.232">Page should have contained text 'The Email field must contain a valid email address' but did not.</status>
+</test>
+<test id="s1-s1-t6" name="Verify not accepting invalid first name field value">
+<kw type="setup" name="Begin Registration Test" library="common">
+<kw name="Open Web Browser" library="helpers">
+<arguments>
+<arg>${registerPage}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190507 10:55:24.948" level="INFO">Opening browser 'chrome' to base url 'https://www.phptravels.net/register'.</msg>
+<status status="PASS" endtime="20190507 10:55:37.221" starttime="20190507 10:55:24.947"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190507 10:55:37.432" starttime="20190507 10:55:37.221"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:55:37.433" starttime="20190507 10:55:24.946"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:55:37.433" starttime="20190507 10:55:24.945"></status>
+</kw>
+<kw name="Generate Valid Test Email" library="helpers">
+<arguments>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${validEmailValue}</var>
+</assign>
+<kw name="Split String" library="String">
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<arguments>
+<arg>${GMAIL}</arg>
+<arg>@</arg>
+</arguments>
+<assign>
+<var>@{words}</var>
+</assign>
+<msg timestamp="20190507 10:55:37.436" level="INFO">@{words} = [ testing | gmail.com ]</msg>
+<status status="PASS" endtime="20190507 10:55:37.436" starttime="20190507 10:55:37.435"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>@{words}[0]+${counter}@@{words}[1]</arg>
+</arguments>
+<assign>
+<var>${test}</var>
+</assign>
+<msg timestamp="20190507 10:55:37.437" level="INFO">${test} = testing+1@gmail.com</msg>
+<status status="PASS" endtime="20190507 10:55:37.437" starttime="20190507 10:55:37.436"></status>
+</kw>
+<msg timestamp="20190507 10:55:37.438" level="INFO">${validEmailValue} = testing+1@gmail.com</msg>
+<status status="PASS" endtime="20190507 10:55:37.438" starttime="20190507 10:55:37.434"></status>
+</kw>
+<kw name="Input Registeration Form Fields" library="register">
+<arguments>
+<arg>@{invalidFirstName}[1]</arg>
+<arg>@{validlastName}[0]</arg>
+<arg>${validMobileNumber}</arg>
+<arg>${validEmailValue}</arg>
+<arg>@{validPassword}[0]</arg>
+<arg>@{validConfirmPassword}[0]</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${firstNameField}</arg>
+<arg>${firstNameValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:55:37.441" level="INFO">Typing text 'salma' into text field 'firstname'.</msg>
+<status status="PASS" endtime="20190507 10:55:37.673" starttime="20190507 10:55:37.441"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${lastNameField}</arg>
+<arg>${lastNameValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:55:37.674" level="INFO">Typing text 'Badr' into text field 'lastname'.</msg>
+<status status="PASS" endtime="20190507 10:55:37.839" starttime="20190507 10:55:37.673"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${mobileNumberField}</arg>
+<arg>${mobileNumberValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:55:37.840" level="INFO">Typing text '01023113090' into text field 'phone'.</msg>
+<status status="PASS" endtime="20190507 10:55:38.007" starttime="20190507 10:55:37.840"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${emailField}</arg>
+<arg>${emailValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:55:38.008" level="INFO">Typing text 'testing+1@gmail.com' into text field 'email'.</msg>
+<status status="PASS" endtime="20190507 10:55:38.175" starttime="20190507 10:55:38.007"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${passwordField}</arg>
+<arg>${passwordValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:55:38.176" level="INFO">Typing text 'SalmaBadr#' into text field 'password'.</msg>
+<status status="PASS" endtime="20190507 10:55:38.307" starttime="20190507 10:55:38.176"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${confirmPasswordField}</arg>
+<arg>${confirmPasswordValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:55:38.307" level="INFO">Typing text 'SalmaBadr#' into text field 'confirmpassword'.</msg>
+<status status="PASS" endtime="20190507 10:55:38.424" starttime="20190507 10:55:38.307"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:55:38.424" starttime="20190507 10:55:37.439"></status>
+</kw>
+<kw name="Click On Sign Up" library="register">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${registerButton}</arg>
+</arguments>
+<msg timestamp="20190507 10:55:38.426" level="INFO">Clicking button 'xpath=//*[@id="headersignupform"]/div[9]/button'.</msg>
+<status status="PASS" endtime="20190507 10:55:38.554" starttime="20190507 10:55:38.425"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 10:55:48.555" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 10:55:48.555" starttime="20190507 10:55:38.554"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:55:48.556" starttime="20190507 10:55:38.425"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${invalidFirstNameError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 10:55:52.428" level="FAIL">Page should have contained text 'The First Name field must start with a capital letter and can't contain spaces or special characters' but did not.</msg>
+<status status="FAIL" endtime="20190507 10:55:52.428" starttime="20190507 10:55:48.559"></status>
+</kw>
+<status status="FAIL" endtime="20190507 10:55:52.429" starttime="20190507 10:55:48.558"></status>
+</kw>
+<kw type="teardown" name="End Registration Test" library="common">
+<kw name="Capture screenshot" library="helpers">
+<arguments>
+<arg>register</arg>
+</arguments>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<msg timestamp="20190507 10:55:53.033" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Results/Screenshots/register/Verify%20not%20accepting%20invalid%20first%20name%20field%20value-Failed.png"&gt;&lt;img src="../Results/Screenshots/register/Verify%20not%20accepting%20invalid%20first%20name%20field%20value-Failed.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190507 10:55:53.034" starttime="20190507 10:55:52.430"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:55:53.034" starttime="20190507 10:55:52.430"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:55:53.034" starttime="20190507 10:55:52.430"></status>
+</kw>
+<kw name="Close Web Browser" library="helpers">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190507 10:55:55.773" starttime="20190507 10:55:53.035"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:55:55.774" starttime="20190507 10:55:53.034"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:55:55.775" starttime="20190507 10:55:52.429"></status>
+</kw>
+<doc>Register with invalid first name field</doc>
+<status status="FAIL" endtime="20190507 10:55:55.779" critical="yes" starttime="20190507 10:55:24.944">Page should have contained text 'The First Name field must start with a capital letter and can't contain spaces or special characters' but did not.</status>
+</test>
+<test id="s1-s1-t7" name="Verify not accepting invalid last name field value">
+<kw type="setup" name="Begin Registration Test" library="common">
+<kw name="Open Web Browser" library="helpers">
+<arguments>
+<arg>${registerPage}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190507 10:55:55.808" level="INFO">Opening browser 'chrome' to base url 'https://www.phptravels.net/register'.</msg>
+<status status="PASS" endtime="20190507 10:56:14.341" starttime="20190507 10:55:55.806"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190507 10:56:14.506" starttime="20190507 10:56:14.341"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:56:14.507" starttime="20190507 10:55:55.802"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:56:14.507" starttime="20190507 10:55:55.799"></status>
+</kw>
+<kw name="Generate Valid Test Email" library="helpers">
+<arguments>
+<arg>2</arg>
+</arguments>
+<assign>
+<var>${validEmailValue}</var>
+</assign>
+<kw name="Split String" library="String">
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<arguments>
+<arg>${GMAIL}</arg>
+<arg>@</arg>
+</arguments>
+<assign>
+<var>@{words}</var>
+</assign>
+<msg timestamp="20190507 10:56:14.511" level="INFO">@{words} = [ testing | gmail.com ]</msg>
+<status status="PASS" endtime="20190507 10:56:14.511" starttime="20190507 10:56:14.510"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>@{words}[0]+${counter}@@{words}[1]</arg>
+</arguments>
+<assign>
+<var>${test}</var>
+</assign>
+<msg timestamp="20190507 10:56:14.512" level="INFO">${test} = testing+2@gmail.com</msg>
+<status status="PASS" endtime="20190507 10:56:14.512" starttime="20190507 10:56:14.511"></status>
+</kw>
+<msg timestamp="20190507 10:56:14.513" level="INFO">${validEmailValue} = testing+2@gmail.com</msg>
+<status status="PASS" endtime="20190507 10:56:14.513" starttime="20190507 10:56:14.509"></status>
+</kw>
+<kw name="Input Registeration Form Fields" library="register">
+<arguments>
+<arg>${validFirstName}</arg>
+<arg>@{invalidLastName}[1]</arg>
+<arg>${validMobileNumber}</arg>
+<arg>${validEmailValue}</arg>
+<arg>@{validPassword}[0]</arg>
+<arg>@{validConfirmPassword}[0]</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${firstNameField}</arg>
+<arg>${firstNameValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:56:14.518" level="INFO">Typing text 'Salma' into text field 'firstname'.</msg>
+<status status="PASS" endtime="20190507 10:56:14.766" starttime="20190507 10:56:14.517"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${lastNameField}</arg>
+<arg>${lastNameValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:56:14.767" level="INFO">Typing text 'badr' into text field 'lastname'.</msg>
+<status status="PASS" endtime="20190507 10:56:15.003" starttime="20190507 10:56:14.767"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${mobileNumberField}</arg>
+<arg>${mobileNumberValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:56:15.004" level="INFO">Typing text '01023113090' into text field 'phone'.</msg>
+<status status="PASS" endtime="20190507 10:56:15.161" starttime="20190507 10:56:15.003"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${emailField}</arg>
+<arg>${emailValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:56:15.162" level="INFO">Typing text 'testing+2@gmail.com' into text field 'email'.</msg>
+<status status="PASS" endtime="20190507 10:56:15.329" starttime="20190507 10:56:15.162"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${passwordField}</arg>
+<arg>${passwordValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:56:15.330" level="INFO">Typing text 'SalmaBadr#' into text field 'password'.</msg>
+<status status="PASS" endtime="20190507 10:56:15.590" starttime="20190507 10:56:15.330"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${confirmPasswordField}</arg>
+<arg>${confirmPasswordValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:56:15.591" level="INFO">Typing text 'SalmaBadr#' into text field 'confirmpassword'.</msg>
+<status status="PASS" endtime="20190507 10:56:15.766" starttime="20190507 10:56:15.590"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:56:15.766" starttime="20190507 10:56:14.515"></status>
+</kw>
+<kw name="Click On Sign Up" library="register">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${registerButton}</arg>
+</arguments>
+<msg timestamp="20190507 10:56:15.769" level="INFO">Clicking button 'xpath=//*[@id="headersignupform"]/div[9]/button'.</msg>
+<status status="PASS" endtime="20190507 10:56:15.893" starttime="20190507 10:56:15.768"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 10:56:25.893" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 10:56:25.893" starttime="20190507 10:56:15.893"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:56:25.893" starttime="20190507 10:56:15.767"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${invalidLastNameError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 10:56:30.281" level="FAIL">Page should have contained text 'The Last Name field must start with a capital letter and can't contain spaces or special characters' but did not.</msg>
+<status status="FAIL" endtime="20190507 10:56:30.281" starttime="20190507 10:56:25.897"></status>
+</kw>
+<status status="FAIL" endtime="20190507 10:56:30.282" starttime="20190507 10:56:25.895"></status>
+</kw>
+<kw type="teardown" name="End Registration Test" library="common">
+<kw name="Capture screenshot" library="helpers">
+<arguments>
+<arg>register</arg>
+</arguments>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<msg timestamp="20190507 10:56:30.907" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Results/Screenshots/register/Verify%20not%20accepting%20invalid%20last%20name%20field%20value-Failed.png"&gt;&lt;img src="../Results/Screenshots/register/Verify%20not%20accepting%20invalid%20last%20name%20field%20value-Failed.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190507 10:56:30.907" starttime="20190507 10:56:30.286"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:56:30.907" starttime="20190507 10:56:30.285"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:56:30.907" starttime="20190507 10:56:30.284"></status>
+</kw>
+<kw name="Close Web Browser" library="helpers">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190507 10:56:33.366" starttime="20190507 10:56:30.908"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:56:33.367" starttime="20190507 10:56:30.907"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:56:33.367" starttime="20190507 10:56:30.283"></status>
+</kw>
+<doc>Register with invalid last name field</doc>
+<status status="FAIL" endtime="20190507 10:56:33.367" critical="yes" starttime="20190507 10:55:55.791">Page should have contained text 'The Last Name field must start with a capital letter and can't contain spaces or special characters' but did not.</status>
+</test>
+<test id="s1-s1-t8" name="Verify not accepting equal values for first and last name fields">
+<kw type="setup" name="Begin Registration Test" library="common">
+<kw name="Open Web Browser" library="helpers">
+<arguments>
+<arg>${registerPage}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190507 10:56:33.373" level="INFO">Opening browser 'chrome' to base url 'https://www.phptravels.net/register'.</msg>
+<status status="PASS" endtime="20190507 10:56:45.926" starttime="20190507 10:56:33.373"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190507 10:56:46.048" starttime="20190507 10:56:45.926"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:56:46.049" starttime="20190507 10:56:33.373"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:56:46.049" starttime="20190507 10:56:33.372"></status>
+</kw>
+<kw name="Generate Valid Test Email" library="helpers">
+<arguments>
+<arg>3</arg>
+</arguments>
+<assign>
+<var>${validEmailValue}</var>
+</assign>
+<kw name="Split String" library="String">
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<arguments>
+<arg>${GMAIL}</arg>
+<arg>@</arg>
+</arguments>
+<assign>
+<var>@{words}</var>
+</assign>
+<msg timestamp="20190507 10:56:46.051" level="INFO">@{words} = [ testing | gmail.com ]</msg>
+<status status="PASS" endtime="20190507 10:56:46.051" starttime="20190507 10:56:46.050"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>@{words}[0]+${counter}@@{words}[1]</arg>
+</arguments>
+<assign>
+<var>${test}</var>
+</assign>
+<msg timestamp="20190507 10:56:46.052" level="INFO">${test} = testing+3@gmail.com</msg>
+<status status="PASS" endtime="20190507 10:56:46.052" starttime="20190507 10:56:46.051"></status>
+</kw>
+<msg timestamp="20190507 10:56:46.052" level="INFO">${validEmailValue} = testing+3@gmail.com</msg>
+<status status="PASS" endtime="20190507 10:56:46.052" starttime="20190507 10:56:46.049"></status>
+</kw>
+<kw name="Input Registeration Form Fields" library="register">
+<arguments>
+<arg>${validFirstName}</arg>
+<arg>@{validLastName}[1]</arg>
+<arg>${validMobileNumber}</arg>
+<arg>${validEmailValue}</arg>
+<arg>@{validPassword}[0]</arg>
+<arg>@{validConfirmPassword}[0]</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${firstNameField}</arg>
+<arg>${firstNameValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:56:46.055" level="INFO">Typing text 'Salma' into text field 'firstname'.</msg>
+<status status="PASS" endtime="20190507 10:56:46.204" starttime="20190507 10:56:46.055"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${lastNameField}</arg>
+<arg>${lastNameValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:56:46.205" level="INFO">Typing text 'Salma' into text field 'lastname'.</msg>
+<status status="PASS" endtime="20190507 10:56:46.320" starttime="20190507 10:56:46.204"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${mobileNumberField}</arg>
+<arg>${mobileNumberValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:56:46.321" level="INFO">Typing text '01023113090' into text field 'phone'.</msg>
+<status status="PASS" endtime="20190507 10:56:46.491" starttime="20190507 10:56:46.320"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${emailField}</arg>
+<arg>${emailValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:56:46.491" level="INFO">Typing text 'testing+3@gmail.com' into text field 'email'.</msg>
+<status status="PASS" endtime="20190507 10:56:46.689" starttime="20190507 10:56:46.491"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${passwordField}</arg>
+<arg>${passwordValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:56:46.690" level="INFO">Typing text 'SalmaBadr#' into text field 'password'.</msg>
+<status status="PASS" endtime="20190507 10:56:46.819" starttime="20190507 10:56:46.689"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${confirmPasswordField}</arg>
+<arg>${confirmPasswordValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:56:46.819" level="INFO">Typing text 'SalmaBadr#' into text field 'confirmpassword'.</msg>
+<status status="PASS" endtime="20190507 10:56:46.990" starttime="20190507 10:56:46.819"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:56:46.990" starttime="20190507 10:56:46.053"></status>
+</kw>
+<kw name="Click On Sign Up" library="register">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${registerButton}</arg>
+</arguments>
+<msg timestamp="20190507 10:56:46.992" level="INFO">Clicking button 'xpath=//*[@id="headersignupform"]/div[9]/button'.</msg>
+<status status="PASS" endtime="20190507 10:56:47.196" starttime="20190507 10:56:46.992"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 10:56:57.196" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 10:56:57.196" starttime="20190507 10:56:47.196"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:56:57.196" starttime="20190507 10:56:46.991"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${firstNameEqualLastNameError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 10:57:00.702" level="FAIL">Page should have contained text 'First Name and Last Name fields can't be equal' but did not.</msg>
+<status status="FAIL" endtime="20190507 10:57:00.702" starttime="20190507 10:56:57.198"></status>
+</kw>
+<status status="FAIL" endtime="20190507 10:57:00.702" starttime="20190507 10:56:57.197"></status>
+</kw>
+<kw type="teardown" name="End Registration Test" library="common">
+<kw name="Capture screenshot" library="helpers">
+<arguments>
+<arg>register</arg>
+</arguments>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<msg timestamp="20190507 10:57:01.283" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Results/Screenshots/register/Verify%20not%20accepting%20equal%20values%20for%20first%20and%20last%20name%20fields-Failed.png"&gt;&lt;img src="../Results/Screenshots/register/Verify%20not%20accepting%20equal%20values%20for%20first%20and%20last%20name%20fields-Failed.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190507 10:57:01.283" starttime="20190507 10:57:00.709"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:57:01.283" starttime="20190507 10:57:00.708"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:57:01.283" starttime="20190507 10:57:00.708"></status>
+</kw>
+<kw name="Close Web Browser" library="helpers">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190507 10:57:03.782" starttime="20190507 10:57:01.284"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:57:03.783" starttime="20190507 10:57:01.284"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:57:03.783" starttime="20190507 10:57:00.707"></status>
+</kw>
+<doc>Register with equal values for first and last name fields</doc>
+<status status="FAIL" endtime="20190507 10:57:03.783" critical="yes" starttime="20190507 10:56:33.371">Page should have contained text 'First Name and Last Name fields can't be equal' but did not.</status>
+</test>
+<test id="s1-s1-t9" name="Verify not accepting invalid password field value">
+<kw type="setup" name="Begin Registration Test" library="common">
+<kw name="Open Web Browser" library="helpers">
+<arguments>
+<arg>${registerPage}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190507 10:57:03.790" level="INFO">Opening browser 'chrome' to base url 'https://www.phptravels.net/register'.</msg>
+<status status="PASS" endtime="20190507 10:57:15.596" starttime="20190507 10:57:03.789"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190507 10:57:15.731" starttime="20190507 10:57:15.596"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:57:15.731" starttime="20190507 10:57:03.789"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:57:15.731" starttime="20190507 10:57:03.788"></status>
+</kw>
+<kw name="Generate Valid Test Email" library="helpers">
+<arguments>
+<arg>4</arg>
+</arguments>
+<assign>
+<var>${validEmailValue}</var>
+</assign>
+<kw name="Split String" library="String">
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<arguments>
+<arg>${GMAIL}</arg>
+<arg>@</arg>
+</arguments>
+<assign>
+<var>@{words}</var>
+</assign>
+<msg timestamp="20190507 10:57:15.733" level="INFO">@{words} = [ testing | gmail.com ]</msg>
+<status status="PASS" endtime="20190507 10:57:15.733" starttime="20190507 10:57:15.732"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>@{words}[0]+${counter}@@{words}[1]</arg>
+</arguments>
+<assign>
+<var>${test}</var>
+</assign>
+<msg timestamp="20190507 10:57:15.733" level="INFO">${test} = testing+4@gmail.com</msg>
+<status status="PASS" endtime="20190507 10:57:15.733" starttime="20190507 10:57:15.733"></status>
+</kw>
+<msg timestamp="20190507 10:57:15.734" level="INFO">${validEmailValue} = testing+4@gmail.com</msg>
+<status status="PASS" endtime="20190507 10:57:15.734" starttime="20190507 10:57:15.732"></status>
+</kw>
+<kw name="Input Registeration Form Fields" library="register">
+<arguments>
+<arg>${validFirstName}</arg>
+<arg>@{validLastName}[0]</arg>
+<arg>${validMobileNumber}</arg>
+<arg>${validEmailValue}</arg>
+<arg>@{invalidPassword}[4]</arg>
+<arg>@{invalidConfirmPassword}[4]</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${firstNameField}</arg>
+<arg>${firstNameValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:57:15.736" level="INFO">Typing text 'Salma' into text field 'firstname'.</msg>
+<status status="PASS" endtime="20190507 10:57:15.897" starttime="20190507 10:57:15.736"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${lastNameField}</arg>
+<arg>${lastNameValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:57:15.898" level="INFO">Typing text 'Badr' into text field 'lastname'.</msg>
+<status status="PASS" endtime="20190507 10:57:16.043" starttime="20190507 10:57:15.897"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${mobileNumberField}</arg>
+<arg>${mobileNumberValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:57:16.044" level="INFO">Typing text '01023113090' into text field 'phone'.</msg>
+<status status="PASS" endtime="20190507 10:57:16.218" starttime="20190507 10:57:16.044"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${emailField}</arg>
+<arg>${emailValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:57:16.218" level="INFO">Typing text 'testing+4@gmail.com' into text field 'email'.</msg>
+<status status="PASS" endtime="20190507 10:57:16.410" starttime="20190507 10:57:16.218"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${passwordField}</arg>
+<arg>${passwordValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:57:16.412" level="INFO">Typing text 'test12' into text field 'password'.</msg>
+<status status="PASS" endtime="20190507 10:57:16.717" starttime="20190507 10:57:16.410"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${confirmPasswordField}</arg>
+<arg>${confirmPasswordValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:57:16.718" level="INFO">Typing text 'test12' into text field 'confirmpassword'.</msg>
+<status status="PASS" endtime="20190507 10:57:16.919" starttime="20190507 10:57:16.718"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:57:16.919" starttime="20190507 10:57:15.734"></status>
+</kw>
+<kw name="Click On Sign Up" library="register">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${registerButton}</arg>
+</arguments>
+<msg timestamp="20190507 10:57:16.921" level="INFO">Clicking button 'xpath=//*[@id="headersignupform"]/div[9]/button'.</msg>
+<status status="PASS" endtime="20190507 10:57:17.143" starttime="20190507 10:57:16.920"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 10:57:27.144" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 10:57:27.144" starttime="20190507 10:57:17.143"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:57:27.145" starttime="20190507 10:57:16.920"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${invalidPasswordError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 10:57:30.856" level="FAIL">Page should have contained text 'The Password field must have a capital letter, a small letter and a special character' but did not.</msg>
+<status status="FAIL" endtime="20190507 10:57:30.856" starttime="20190507 10:57:27.148"></status>
+</kw>
+<status status="FAIL" endtime="20190507 10:57:30.856" starttime="20190507 10:57:27.146"></status>
+</kw>
+<kw type="teardown" name="End Registration Test" library="common">
+<kw name="Capture screenshot" library="helpers">
+<arguments>
+<arg>register</arg>
+</arguments>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<msg timestamp="20190507 10:57:31.479" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Results/Screenshots/register/Verify%20not%20accepting%20invalid%20password%20field%20value-Failed.png"&gt;&lt;img src="../Results/Screenshots/register/Verify%20not%20accepting%20invalid%20password%20field%20value-Failed.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190507 10:57:31.479" starttime="20190507 10:57:30.858"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:57:31.479" starttime="20190507 10:57:30.858"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:57:31.479" starttime="20190507 10:57:30.857"></status>
+</kw>
+<kw name="Close Web Browser" library="helpers">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190507 10:57:33.988" starttime="20190507 10:57:31.480"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:57:33.989" starttime="20190507 10:57:31.479"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:57:33.990" starttime="20190507 10:57:30.857"></status>
+</kw>
+<doc>Register with invalid password field</doc>
+<status status="FAIL" endtime="20190507 10:57:33.992" critical="yes" starttime="20190507 10:57:03.787">Page should have contained text 'The Password field must have a capital letter, a small letter and a special character' but did not.</status>
+</test>
+<test id="s1-s1-t10" name="Verify not accepting less than 6 characters for password field value">
+<kw type="setup" name="Begin Registration Test" library="common">
+<kw name="Open Web Browser" library="helpers">
+<arguments>
+<arg>${registerPage}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190507 10:57:34.021" level="INFO">Opening browser 'chrome' to base url 'https://www.phptravels.net/register'.</msg>
+<status status="PASS" endtime="20190507 10:57:45.224" starttime="20190507 10:57:34.020"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190507 10:57:45.352" starttime="20190507 10:57:45.225"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:57:45.352" starttime="20190507 10:57:34.016"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:57:45.353" starttime="20190507 10:57:34.014"></status>
+</kw>
+<kw name="Generate Valid Test Email" library="helpers">
+<arguments>
+<arg>5</arg>
+</arguments>
+<assign>
+<var>${validEmailValue}</var>
+</assign>
+<kw name="Split String" library="String">
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<arguments>
+<arg>${GMAIL}</arg>
+<arg>@</arg>
+</arguments>
+<assign>
+<var>@{words}</var>
+</assign>
+<msg timestamp="20190507 10:57:45.354" level="INFO">@{words} = [ testing | gmail.com ]</msg>
+<status status="PASS" endtime="20190507 10:57:45.354" starttime="20190507 10:57:45.354"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>@{words}[0]+${counter}@@{words}[1]</arg>
+</arguments>
+<assign>
+<var>${test}</var>
+</assign>
+<msg timestamp="20190507 10:57:45.355" level="INFO">${test} = testing+5@gmail.com</msg>
+<status status="PASS" endtime="20190507 10:57:45.355" starttime="20190507 10:57:45.354"></status>
+</kw>
+<msg timestamp="20190507 10:57:45.355" level="INFO">${validEmailValue} = testing+5@gmail.com</msg>
+<status status="PASS" endtime="20190507 10:57:45.355" starttime="20190507 10:57:45.353"></status>
+</kw>
+<kw name="Input Registeration Form Fields" library="register">
+<arguments>
+<arg>${validFirstName}</arg>
+<arg>@{validLastName}[0]</arg>
+<arg>${validMobileNumber}</arg>
+<arg>${validEmailValue}</arg>
+<arg>@{invalidPassword}[1]</arg>
+<arg>@{invalidConfirmPassword}[1]</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${firstNameField}</arg>
+<arg>${firstNameValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:57:45.357" level="INFO">Typing text 'Salma' into text field 'firstname'.</msg>
+<status status="PASS" endtime="20190507 10:57:45.483" starttime="20190507 10:57:45.356"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${lastNameField}</arg>
+<arg>${lastNameValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:57:45.484" level="INFO">Typing text 'Badr' into text field 'lastname'.</msg>
+<status status="PASS" endtime="20190507 10:57:45.617" starttime="20190507 10:57:45.484"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${mobileNumberField}</arg>
+<arg>${mobileNumberValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:57:45.618" level="INFO">Typing text '01023113090' into text field 'phone'.</msg>
+<status status="PASS" endtime="20190507 10:57:45.770" starttime="20190507 10:57:45.617"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${emailField}</arg>
+<arg>${emailValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:57:45.771" level="INFO">Typing text 'testing+5@gmail.com' into text field 'email'.</msg>
+<status status="PASS" endtime="20190507 10:57:45.929" starttime="20190507 10:57:45.771"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${passwordField}</arg>
+<arg>${passwordValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:57:45.930" level="INFO">Typing text '123' into text field 'password'.</msg>
+<status status="PASS" endtime="20190507 10:57:46.010" starttime="20190507 10:57:45.929"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${confirmPasswordField}</arg>
+<arg>${confirmPasswordValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:57:46.012" level="INFO">Typing text '123' into text field 'confirmpassword'.</msg>
+<status status="PASS" endtime="20190507 10:57:46.102" starttime="20190507 10:57:46.011"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:57:46.102" starttime="20190507 10:57:45.356"></status>
+</kw>
+<kw name="Click On Sign Up" library="register">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${registerButton}</arg>
+</arguments>
+<msg timestamp="20190507 10:57:46.104" level="INFO">Clicking button 'xpath=//*[@id="headersignupform"]/div[9]/button'.</msg>
+<status status="PASS" endtime="20190507 10:57:46.269" starttime="20190507 10:57:46.103"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 10:57:56.270" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 10:57:56.270" starttime="20190507 10:57:46.270"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:57:56.270" starttime="20190507 10:57:46.103"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${shortPasswordError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 10:57:56.298" level="INFO">Current page contains text 'The Password field must be at least 6 characters in length'.</msg>
+<status status="PASS" endtime="20190507 10:57:56.298" starttime="20190507 10:57:56.272"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:57:56.298" starttime="20190507 10:57:56.271"></status>
+</kw>
+<kw name="Change Field Value" library="helpers">
+<arguments>
+<arg>${passwordField}</arg>
+<arg>@{invalidPassword}[2]</arg>
+</arguments>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${fieldLocator}</arg>
+</arguments>
+<status status="PASS" endtime="20190507 10:57:56.348" starttime="20190507 10:57:56.299"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${fieldLocator}</arg>
+<arg>${fieldValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:57:56.349" level="INFO">Typing text '!@#$' into text field 'password'.</msg>
+<status status="PASS" endtime="20190507 10:57:56.444" starttime="20190507 10:57:56.348"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:57:56.444" starttime="20190507 10:57:56.299"></status>
+</kw>
+<kw name="Change Field Value" library="helpers">
+<arguments>
+<arg>${confirmPasswordField}</arg>
+<arg>@{invalidConfirmPassword}[2]</arg>
+</arguments>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${fieldLocator}</arg>
+</arguments>
+<status status="PASS" endtime="20190507 10:57:56.498" starttime="20190507 10:57:56.446"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${fieldLocator}</arg>
+<arg>${fieldValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:57:56.499" level="INFO">Typing text '!@#$' into text field 'confirmpassword'.</msg>
+<status status="PASS" endtime="20190507 10:57:56.594" starttime="20190507 10:57:56.498"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:57:56.594" starttime="20190507 10:57:56.445"></status>
+</kw>
+<kw name="Click On Sign Up" library="register">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${registerButton}</arg>
+</arguments>
+<msg timestamp="20190507 10:57:56.598" level="INFO">Clicking button 'xpath=//*[@id="headersignupform"]/div[9]/button'.</msg>
+<status status="PASS" endtime="20190507 10:57:56.706" starttime="20190507 10:57:56.597"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 10:58:06.707" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 10:58:06.707" starttime="20190507 10:57:56.706"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:58:06.707" starttime="20190507 10:57:56.596"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${shortPasswordError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 10:58:06.729" level="INFO">Current page contains text 'The Password field must be at least 6 characters in length'.</msg>
+<status status="PASS" endtime="20190507 10:58:06.730" starttime="20190507 10:58:06.709"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:58:06.730" starttime="20190507 10:58:06.708"></status>
+</kw>
+<kw name="Change Field Value" library="helpers">
+<arguments>
+<arg>${passwordField}</arg>
+<arg>@{invalidPassword}[3]</arg>
+</arguments>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${fieldLocator}</arg>
+</arguments>
+<status status="PASS" endtime="20190507 10:58:06.800" starttime="20190507 10:58:06.734"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${fieldLocator}</arg>
+<arg>${fieldValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:58:06.801" level="INFO">Typing text 'test' into text field 'password'.</msg>
+<status status="PASS" endtime="20190507 10:58:06.919" starttime="20190507 10:58:06.800"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:58:06.919" starttime="20190507 10:58:06.733"></status>
+</kw>
+<kw name="Change Field Value" library="helpers">
+<arguments>
+<arg>${confirmPasswordField}</arg>
+<arg>@{invalidConfirmPassword}[3]</arg>
+</arguments>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${fieldLocator}</arg>
+</arguments>
+<status status="PASS" endtime="20190507 10:58:06.970" starttime="20190507 10:58:06.921"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${fieldLocator}</arg>
+<arg>${fieldValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:58:06.972" level="INFO">Typing text 'test' into text field 'confirmpassword'.</msg>
+<status status="PASS" endtime="20190507 10:58:07.096" starttime="20190507 10:58:06.971"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:58:07.097" starttime="20190507 10:58:06.920"></status>
+</kw>
+<kw name="Click On Sign Up" library="register">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${registerButton}</arg>
+</arguments>
+<msg timestamp="20190507 10:58:07.098" level="INFO">Clicking button 'xpath=//*[@id="headersignupform"]/div[9]/button'.</msg>
+<status status="PASS" endtime="20190507 10:58:07.166" starttime="20190507 10:58:07.098"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 10:58:17.166" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 10:58:17.167" starttime="20190507 10:58:07.166"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:58:17.168" starttime="20190507 10:58:07.098"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${shortPasswordError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 10:58:17.236" level="INFO">Current page contains text 'The Password field must be at least 6 characters in length'.</msg>
+<status status="PASS" endtime="20190507 10:58:17.237" starttime="20190507 10:58:17.177"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:58:17.237" starttime="20190507 10:58:17.171"></status>
+</kw>
+<kw type="teardown" name="End Registration Test" library="common">
+<kw name="Capture screenshot" library="helpers">
+<arguments>
+<arg>register</arg>
+</arguments>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<status status="PASS" endtime="20190507 10:58:17.245" starttime="20190507 10:58:17.243"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:58:17.246" starttime="20190507 10:58:17.241"></status>
+</kw>
+<kw name="Close Web Browser" library="helpers">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190507 10:58:20.188" starttime="20190507 10:58:17.248"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:58:20.189" starttime="20190507 10:58:17.246"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:58:20.190" starttime="20190507 10:58:17.240"></status>
+</kw>
+<doc>Register with short length password field</doc>
+<status status="PASS" endtime="20190507 10:58:20.192" critical="yes" starttime="20190507 10:57:34.007"></status>
+</test>
+<test id="s1-s1-t11" name="Verify not accepting different values for password and confirm password fields">
+<kw type="setup" name="Begin Registration Test" library="common">
+<kw name="Open Web Browser" library="helpers">
+<arguments>
+<arg>${registerPage}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190507 10:58:20.230" level="INFO">Opening browser 'chrome' to base url 'https://www.phptravels.net/register'.</msg>
+<status status="PASS" endtime="20190507 10:58:31.673" starttime="20190507 10:58:20.229"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190507 10:58:31.811" starttime="20190507 10:58:31.674"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:58:31.811" starttime="20190507 10:58:20.225"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:58:31.811" starttime="20190507 10:58:20.223"></status>
+</kw>
+<kw name="Generate Valid Test Email" library="helpers">
+<arguments>
+<arg>6</arg>
+</arguments>
+<assign>
+<var>${validEmailValue}</var>
+</assign>
+<kw name="Split String" library="String">
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<arguments>
+<arg>${GMAIL}</arg>
+<arg>@</arg>
+</arguments>
+<assign>
+<var>@{words}</var>
+</assign>
+<msg timestamp="20190507 10:58:31.814" level="INFO">@{words} = [ testing | gmail.com ]</msg>
+<status status="PASS" endtime="20190507 10:58:31.814" starttime="20190507 10:58:31.813"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>@{words}[0]+${counter}@@{words}[1]</arg>
+</arguments>
+<assign>
+<var>${test}</var>
+</assign>
+<msg timestamp="20190507 10:58:31.815" level="INFO">${test} = testing+6@gmail.com</msg>
+<status status="PASS" endtime="20190507 10:58:31.815" starttime="20190507 10:58:31.814"></status>
+</kw>
+<msg timestamp="20190507 10:58:31.815" level="INFO">${validEmailValue} = testing+6@gmail.com</msg>
+<status status="PASS" endtime="20190507 10:58:31.815" starttime="20190507 10:58:31.813"></status>
+</kw>
+<kw name="Input Registeration Form Fields" library="register">
+<arguments>
+<arg>${validFirstName}</arg>
+<arg>@{validLastName}[0]</arg>
+<arg>${validMobileNumber}</arg>
+<arg>${validEmailValue}</arg>
+<arg>@{validPassword}[0]</arg>
+<arg>@{validConfirmPassword}[1]</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${firstNameField}</arg>
+<arg>${firstNameValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:58:31.817" level="INFO">Typing text 'Salma' into text field 'firstname'.</msg>
+<status status="PASS" endtime="20190507 10:58:31.944" starttime="20190507 10:58:31.817"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${lastNameField}</arg>
+<arg>${lastNameValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:58:31.945" level="INFO">Typing text 'Badr' into text field 'lastname'.</msg>
+<status status="PASS" endtime="20190507 10:58:32.071" starttime="20190507 10:58:31.945"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${mobileNumberField}</arg>
+<arg>${mobileNumberValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:58:32.072" level="INFO">Typing text '01023113090' into text field 'phone'.</msg>
+<status status="PASS" endtime="20190507 10:58:32.245" starttime="20190507 10:58:32.071"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${emailField}</arg>
+<arg>${emailValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:58:32.246" level="INFO">Typing text 'testing+6@gmail.com' into text field 'email'.</msg>
+<status status="PASS" endtime="20190507 10:58:32.411" starttime="20190507 10:58:32.245"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${passwordField}</arg>
+<arg>${passwordValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:58:32.412" level="INFO">Typing text 'SalmaBadr#' into text field 'password'.</msg>
+<status status="PASS" endtime="20190507 10:58:32.541" starttime="20190507 10:58:32.411"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${confirmPasswordField}</arg>
+<arg>${confirmPasswordValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:58:32.542" level="INFO">Typing text 'Salma#' into text field 'confirmpassword'.</msg>
+<status status="PASS" endtime="20190507 10:58:32.780" starttime="20190507 10:58:32.541"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:58:32.781" starttime="20190507 10:58:31.816"></status>
+</kw>
+<kw name="Click On Sign Up" library="register">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${registerButton}</arg>
+</arguments>
+<msg timestamp="20190507 10:58:32.783" level="INFO">Clicking button 'xpath=//*[@id="headersignupform"]/div[9]/button'.</msg>
+<status status="PASS" endtime="20190507 10:58:32.960" starttime="20190507 10:58:32.782"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 10:58:42.961" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 10:58:42.961" starttime="20190507 10:58:32.961"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:58:42.961" starttime="20190507 10:58:32.781"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${passwordsNotMatchError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 10:58:42.987" level="INFO">Current page contains text 'Password not matching with confirm password'.</msg>
+<status status="PASS" endtime="20190507 10:58:42.987" starttime="20190507 10:58:42.963"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:58:42.987" starttime="20190507 10:58:42.963"></status>
+</kw>
+<kw type="teardown" name="End Registration Test" library="common">
+<kw name="Capture screenshot" library="helpers">
+<arguments>
+<arg>register</arg>
+</arguments>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<status status="PASS" endtime="20190507 10:58:42.990" starttime="20190507 10:58:42.989"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:58:42.990" starttime="20190507 10:58:42.988"></status>
+</kw>
+<kw name="Close Web Browser" library="helpers">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190507 10:58:45.796" starttime="20190507 10:58:42.991"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:58:45.797" starttime="20190507 10:58:42.990"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:58:45.798" starttime="20190507 10:58:42.988"></status>
+</kw>
+<doc>Register with different values for password and confirm password fields</doc>
+<status status="PASS" endtime="20190507 10:58:45.800" critical="yes" starttime="20190507 10:58:20.213"></status>
+</test>
+<test id="s1-s1-t12" name="Verify not accepting invalid mobile format">
+<kw type="setup" name="Begin Registration Test" library="common">
+<kw name="Open Web Browser" library="helpers">
+<arguments>
+<arg>${registerPage}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190507 10:58:45.841" level="INFO">Opening browser 'chrome' to base url 'https://www.phptravels.net/register'.</msg>
+<status status="PASS" endtime="20190507 10:58:57.099" starttime="20190507 10:58:45.838"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190507 10:58:57.265" starttime="20190507 10:58:57.099"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:58:57.265" starttime="20190507 10:58:45.835"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:58:57.266" starttime="20190507 10:58:45.833"></status>
+</kw>
+<kw name="Generate Valid Test Email" library="helpers">
+<arguments>
+<arg>7</arg>
+</arguments>
+<assign>
+<var>${validEmailValue}</var>
+</assign>
+<kw name="Split String" library="String">
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<arguments>
+<arg>${GMAIL}</arg>
+<arg>@</arg>
+</arguments>
+<assign>
+<var>@{words}</var>
+</assign>
+<msg timestamp="20190507 10:58:57.268" level="INFO">@{words} = [ testing | gmail.com ]</msg>
+<status status="PASS" endtime="20190507 10:58:57.268" starttime="20190507 10:58:57.267"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>@{words}[0]+${counter}@@{words}[1]</arg>
+</arguments>
+<assign>
+<var>${test}</var>
+</assign>
+<msg timestamp="20190507 10:58:57.269" level="INFO">${test} = testing+7@gmail.com</msg>
+<status status="PASS" endtime="20190507 10:58:57.270" starttime="20190507 10:58:57.269"></status>
+</kw>
+<msg timestamp="20190507 10:58:57.270" level="INFO">${validEmailValue} = testing+7@gmail.com</msg>
+<status status="PASS" endtime="20190507 10:58:57.270" starttime="20190507 10:58:57.267"></status>
+</kw>
+<kw name="Input Registeration Form Fields" library="register">
+<arguments>
+<arg>${validFirstName}</arg>
+<arg>@{validLastName}[0]</arg>
+<arg>@{invalidMobileNumber}[1]</arg>
+<arg>${validEmailValue}</arg>
+<arg>@{validPassword}[0]</arg>
+<arg>@{validConfirmPassword}[0]</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${firstNameField}</arg>
+<arg>${firstNameValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:58:57.275" level="INFO">Typing text 'Salma' into text field 'firstname'.</msg>
+<status status="PASS" endtime="20190507 10:58:57.538" starttime="20190507 10:58:57.274"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${lastNameField}</arg>
+<arg>${lastNameValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:58:57.539" level="INFO">Typing text 'Badr' into text field 'lastname'.</msg>
+<status status="PASS" endtime="20190507 10:58:57.826" starttime="20190507 10:58:57.538"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${mobileNumberField}</arg>
+<arg>${mobileNumberValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:58:57.827" level="INFO">Typing text 'test' into text field 'phone'.</msg>
+<status status="PASS" endtime="20190507 10:58:58.041" starttime="20190507 10:58:57.826"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${emailField}</arg>
+<arg>${emailValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:58:58.042" level="INFO">Typing text 'testing+7@gmail.com' into text field 'email'.</msg>
+<status status="PASS" endtime="20190507 10:58:58.324" starttime="20190507 10:58:58.041"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${passwordField}</arg>
+<arg>${passwordValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:58:58.325" level="INFO">Typing text 'SalmaBadr#' into text field 'password'.</msg>
+<status status="PASS" endtime="20190507 10:58:58.447" starttime="20190507 10:58:58.324"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${confirmPasswordField}</arg>
+<arg>${confirmPasswordValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:58:58.447" level="INFO">Typing text 'SalmaBadr#' into text field 'confirmpassword'.</msg>
+<status status="PASS" endtime="20190507 10:58:58.555" starttime="20190507 10:58:58.447"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:58:58.556" starttime="20190507 10:58:57.272"></status>
+</kw>
+<kw name="Click On Sign Up" library="register">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${registerButton}</arg>
+</arguments>
+<msg timestamp="20190507 10:58:58.557" level="INFO">Clicking button 'xpath=//*[@id="headersignupform"]/div[9]/button'.</msg>
+<status status="PASS" endtime="20190507 10:58:58.659" starttime="20190507 10:58:58.557"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 10:59:08.660" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 10:59:08.660" starttime="20190507 10:58:58.660"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:59:08.660" starttime="20190507 10:58:58.556"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${invalidMobileError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 10:59:12.059" level="FAIL">Page should have contained text 'Please enter a valid mobile number' but did not.</msg>
+<status status="FAIL" endtime="20190507 10:59:12.059" starttime="20190507 10:59:08.663"></status>
+</kw>
+<status status="FAIL" endtime="20190507 10:59:12.059" starttime="20190507 10:59:08.662"></status>
+</kw>
+<kw type="teardown" name="End Registration Test" library="common">
+<kw name="Capture screenshot" library="helpers">
+<arguments>
+<arg>register</arg>
+</arguments>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<msg timestamp="20190507 10:59:12.654" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Results/Screenshots/register/Verify%20not%20accepting%20invalid%20mobile%20format-Failed.png"&gt;&lt;img src="../Results/Screenshots/register/Verify%20not%20accepting%20invalid%20mobile%20format-Failed.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190507 10:59:12.655" starttime="20190507 10:59:12.062"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:59:12.655" starttime="20190507 10:59:12.062"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:59:12.655" starttime="20190507 10:59:12.061"></status>
+</kw>
+<kw name="Close Web Browser" library="helpers">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190507 10:59:15.738" starttime="20190507 10:59:12.655"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:59:15.738" starttime="20190507 10:59:12.655"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:59:15.739" starttime="20190507 10:59:12.060"></status>
+</kw>
+<doc>Register with invalid mobile number field</doc>
+<status status="FAIL" endtime="20190507 10:59:15.739" critical="yes" starttime="20190507 10:58:45.824">Page should have contained text 'Please enter a valid mobile number' but did not.</status>
+</test>
+<test id="s1-s1-t13" name="Verify all mandatory fields gives error when left blank or filled with spaces">
+<kw type="setup" name="Begin Registration Test" library="common">
+<kw name="Open Web Browser" library="helpers">
+<arguments>
+<arg>${registerPage}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190507 10:59:15.745" level="INFO">Opening browser 'chrome' to base url 'https://www.phptravels.net/register'.</msg>
+<status status="PASS" endtime="20190507 10:59:26.904" starttime="20190507 10:59:15.744"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190507 10:59:27.028" starttime="20190507 10:59:26.905"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:59:27.028" starttime="20190507 10:59:15.743"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:59:27.028" starttime="20190507 10:59:15.743"></status>
+</kw>
+<kw name="Click On Sign Up" library="register">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${registerButton}</arg>
+</arguments>
+<msg timestamp="20190507 10:59:27.029" level="INFO">Clicking button 'xpath=//*[@id="headersignupform"]/div[9]/button'.</msg>
+<status status="PASS" endtime="20190507 10:59:27.177" starttime="20190507 10:59:27.029"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 10:59:37.178" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 10:59:37.178" starttime="20190507 10:59:27.178"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:59:37.178" starttime="20190507 10:59:27.029"></status>
+</kw>
+<kw name="Check mandatory fields errors" library="register">
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${emptyEmailError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 10:59:37.205" level="INFO">Current page contains text 'The Email field is required'.</msg>
+<status status="PASS" endtime="20190507 10:59:37.206" starttime="20190507 10:59:37.180"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:59:37.206" starttime="20190507 10:59:37.180"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${emptyFirstNameError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 10:59:37.231" level="INFO">Current page contains text 'The First name field is required'.</msg>
+<status status="PASS" endtime="20190507 10:59:37.232" starttime="20190507 10:59:37.207"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:59:37.232" starttime="20190507 10:59:37.206"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${emptyLastNameError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 10:59:37.255" level="INFO">Current page contains text 'The Last Name field is required'.</msg>
+<status status="PASS" endtime="20190507 10:59:37.255" starttime="20190507 10:59:37.232"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:59:37.255" starttime="20190507 10:59:37.232"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${emptyPasswordError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 10:59:37.279" level="INFO">Current page contains text 'The Password field is required'.</msg>
+<status status="PASS" endtime="20190507 10:59:37.279" starttime="20190507 10:59:37.256"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:59:37.279" starttime="20190507 10:59:37.256"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${emptyMobileError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 10:59:37.338" level="FAIL">Page should have contained text 'The Mobile Number field is required' but did not.</msg>
+<status status="FAIL" endtime="20190507 10:59:37.338" starttime="20190507 10:59:37.280"></status>
+</kw>
+<status status="FAIL" endtime="20190507 10:59:37.339" starttime="20190507 10:59:37.279"></status>
+</kw>
+<status status="FAIL" endtime="20190507 10:59:37.339" starttime="20190507 10:59:37.179"></status>
+</kw>
+<kw type="teardown" name="End Registration Test" library="common">
+<kw name="Capture screenshot" library="helpers">
+<arguments>
+<arg>register</arg>
+</arguments>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<msg timestamp="20190507 10:59:37.712" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Results/Screenshots/register/Verify%20all%20mandatory%20fields%20gives%20error%20when%20left%20blank%20or%20filled%20with%20spaces-Failed.png"&gt;&lt;img src="../Results/Screenshots/register/Verify%20all%20mandatory%20fields%20gives%20error%20when%20left%20blank%20or%20filled%20with%20spaces-Failed.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190507 10:59:37.712" starttime="20190507 10:59:37.342"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:59:37.712" starttime="20190507 10:59:37.341"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:59:37.712" starttime="20190507 10:59:37.341"></status>
+</kw>
+<kw name="Close Web Browser" library="helpers">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190507 10:59:40.178" starttime="20190507 10:59:37.713"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:59:40.179" starttime="20190507 10:59:37.712"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:59:40.180" starttime="20190507 10:59:37.340"></status>
+</kw>
+<doc>Register with blank/space fields</doc>
+<status status="FAIL" endtime="20190507 10:59:40.182" critical="yes" starttime="20190507 10:59:15.742">Page should have contained text 'The Mobile Number field is required' but did not.</status>
+</test>
+<doc>Registration Test Suite</doc>
+<status status="FAIL" endtime="20190507 10:59:40.206" starttime="20190507 10:51:35.886"></status>
+</suite>
+<suite source="C:\development\robot-scripts\Assignment\tests\Suite2-login.robot" id="s1-s2" name="Suite2-login">
+<test id="s1-s2-t1" name="Verify user login successfully with valid data">
+<kw type="setup" name="Begin Login Test" library="common">
+<kw name="Open Web Browser" library="helpers">
+<arguments>
+<arg>${loginPage}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190507 10:59:40.373" level="INFO">Opening browser 'chrome' to base url 'https://www.phptravels.net/login'.</msg>
+<status status="PASS" endtime="20190507 10:59:52.159" starttime="20190507 10:59:40.372"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190507 10:59:52.325" starttime="20190507 10:59:52.159"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:59:52.326" starttime="20190507 10:59:40.370"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:59:52.326" starttime="20190507 10:59:40.369"></status>
+</kw>
+<kw name="Input Login Form Fields" library="login">
+<arguments>
+<arg>${validEmail}</arg>
+<arg>@{validpassword}[0]</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LoginEmailField}</arg>
+<arg>${emailValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:59:52.329" level="INFO">Typing text 'testing@gmail.com' into text field 'username'.</msg>
+<status status="PASS" endtime="20190507 10:59:52.766" starttime="20190507 10:59:52.328"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LoginPasswordField}</arg>
+<arg>${passwordValue}</arg>
+</arguments>
+<msg timestamp="20190507 10:59:52.767" level="INFO">Typing text 'SalmaBadr#' into text field 'password'.</msg>
+<status status="PASS" endtime="20190507 10:59:52.965" starttime="20190507 10:59:52.767"></status>
+</kw>
+<status status="PASS" endtime="20190507 10:59:52.966" starttime="20190507 10:59:52.327"></status>
+</kw>
+<kw name="Click On Login" library="login">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${loginButton}</arg>
+</arguments>
+<msg timestamp="20190507 10:59:52.967" level="INFO">Clicking button 'xpath=//*[@id="loginfrm"]/button'.</msg>
+<status status="PASS" endtime="20190507 10:59:53.094" starttime="20190507 10:59:52.967"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 11:00:03.095" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 11:00:03.095" starttime="20190507 10:59:53.094"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:00:03.095" starttime="20190507 10:59:52.966"></status>
+</kw>
+<kw name="Check Current URL" library="helpers">
+<arguments>
+<arg>${accountPage}</arg>
+</arguments>
+<kw name="Get Location" library="SeleniumLibrary">
+<doc>Returns the current browser URL.</doc>
+<assign>
+<var>${currentURL}</var>
+</assign>
+<msg timestamp="20190507 11:00:05.871" level="INFO">${currentURL} = https://www.phptravels.net/account/</msg>
+<status status="PASS" endtime="20190507 11:00:05.871" starttime="20190507 11:00:03.096"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${currentURL}</arg>
+</arguments>
+<status status="PASS" endtime="20190507 11:00:05.873" starttime="20190507 11:00:05.872"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:00:05.873" starttime="20190507 11:00:03.096"></status>
+</kw>
+<kw type="teardown" name="End Login Test" library="common">
+<kw name="Capture screenshot" library="helpers">
+<arguments>
+<arg>login</arg>
+</arguments>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<status status="PASS" endtime="20190507 11:00:05.879" starttime="20190507 11:00:05.878"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:00:05.879" starttime="20190507 11:00:05.877"></status>
+</kw>
+<kw name="Close Web Browser" library="helpers">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190507 11:00:08.861" starttime="20190507 11:00:05.880"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:00:08.862" starttime="20190507 11:00:05.880"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:00:08.863" starttime="20190507 11:00:05.875"></status>
+</kw>
+<doc>Login user with valid email and password</doc>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="PASS" endtime="20190507 11:00:08.865" critical="yes" starttime="20190507 10:59:40.365"></status>
+</test>
+<test id="s1-s2-t2" name="Verify all mandatory fields gives error when left blank or filled with spaces">
+<kw type="setup" name="Begin Login Test" library="common">
+<kw name="Open Web Browser" library="helpers">
+<arguments>
+<arg>${loginPage}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190507 11:00:08.890" level="INFO">Opening browser 'chrome' to base url 'https://www.phptravels.net/login'.</msg>
+<status status="PASS" endtime="20190507 11:00:21.190" starttime="20190507 11:00:08.888"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190507 11:00:21.328" starttime="20190507 11:00:21.190"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:00:21.329" starttime="20190507 11:00:08.885"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:00:21.329" starttime="20190507 11:00:08.883"></status>
+</kw>
+<kw name="Click On Login" library="login">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${loginButton}</arg>
+</arguments>
+<msg timestamp="20190507 11:00:21.331" level="INFO">Clicking button 'xpath=//*[@id="loginfrm"]/button'.</msg>
+<status status="PASS" endtime="20190507 11:00:21.555" starttime="20190507 11:00:21.330"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 11:00:31.557" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 11:00:31.559" starttime="20190507 11:00:21.556"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:00:31.560" starttime="20190507 11:00:21.330"></status>
+</kw>
+<kw name="Check mandatory fields errors" library="login">
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${emptyEmailError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 11:00:31.647" level="FAIL">Page should have contained text 'The Email field is required' but did not.</msg>
+<status status="FAIL" endtime="20190507 11:00:31.647" starttime="20190507 11:00:31.572"></status>
+</kw>
+<status status="FAIL" endtime="20190507 11:00:31.647" starttime="20190507 11:00:31.570"></status>
+</kw>
+<status status="FAIL" endtime="20190507 11:00:31.647" starttime="20190507 11:00:31.563"></status>
+</kw>
+<kw type="teardown" name="End Login Test" library="common">
+<kw name="Capture screenshot" library="helpers">
+<arguments>
+<arg>login</arg>
+</arguments>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<msg timestamp="20190507 11:00:32.058" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Results/Screenshots/login/Verify%20all%20mandatory%20fields%20gives%20error%20when%20left%20blank%20or%20filled%20with%20spaces-Failed.png"&gt;&lt;img src="../Results/Screenshots/login/Verify%20all%20mandatory%20fields%20gives%20error%20when%20left%20blank%20or%20filled%20with%20spaces-Failed.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190507 11:00:32.058" starttime="20190507 11:00:31.650"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:00:32.058" starttime="20190507 11:00:31.649"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:00:32.058" starttime="20190507 11:00:31.649"></status>
+</kw>
+<kw name="Close Web Browser" library="helpers">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190507 11:00:34.713" starttime="20190507 11:00:32.059"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:00:34.714" starttime="20190507 11:00:32.058"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:00:34.715" starttime="20190507 11:00:31.648"></status>
+</kw>
+<doc>Login with blank/space fields</doc>
+<status status="FAIL" endtime="20190507 11:00:34.716" critical="yes" starttime="20190507 11:00:08.877">Page should have contained text 'The Email field is required' but did not.</status>
+</test>
+<test id="s1-s2-t3" name="Verify not accepting a non registered email address">
+<kw type="setup" name="Begin Login Test" library="common">
+<kw name="Open Web Browser" library="helpers">
+<arguments>
+<arg>${loginPage}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190507 11:00:34.730" level="INFO">Opening browser 'chrome' to base url 'https://www.phptravels.net/login'.</msg>
+<status status="PASS" endtime="20190507 11:00:52.275" starttime="20190507 11:00:34.729"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190507 11:00:52.398" starttime="20190507 11:00:52.275"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:00:52.398" starttime="20190507 11:00:34.727"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:00:52.398" starttime="20190507 11:00:34.726"></status>
+</kw>
+<kw name="Generate Valid Test Email" library="helpers">
+<arguments>
+<arg>100</arg>
+</arguments>
+<assign>
+<var>${validEmail}</var>
+</assign>
+<kw name="Split String" library="String">
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<arguments>
+<arg>${GMAIL}</arg>
+<arg>@</arg>
+</arguments>
+<assign>
+<var>@{words}</var>
+</assign>
+<msg timestamp="20190507 11:00:52.401" level="INFO">@{words} = [ testing | gmail.com ]</msg>
+<status status="PASS" endtime="20190507 11:00:52.401" starttime="20190507 11:00:52.400"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>@{words}[0]+${counter}@@{words}[1]</arg>
+</arguments>
+<assign>
+<var>${test}</var>
+</assign>
+<msg timestamp="20190507 11:00:52.402" level="INFO">${test} = testing+100@gmail.com</msg>
+<status status="PASS" endtime="20190507 11:00:52.402" starttime="20190507 11:00:52.401"></status>
+</kw>
+<msg timestamp="20190507 11:00:52.403" level="INFO">${validEmail} = testing+100@gmail.com</msg>
+<status status="PASS" endtime="20190507 11:00:52.403" starttime="20190507 11:00:52.399"></status>
+</kw>
+<kw name="Input Login Form Fields" library="login">
+<arguments>
+<arg>${validEmail}</arg>
+<arg>@{validpassword}[0]</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LoginEmailField}</arg>
+<arg>${emailValue}</arg>
+</arguments>
+<msg timestamp="20190507 11:00:52.405" level="INFO">Typing text 'testing+100@gmail.com' into text field 'username'.</msg>
+<status status="PASS" endtime="20190507 11:00:52.643" starttime="20190507 11:00:52.405"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LoginPasswordField}</arg>
+<arg>${passwordValue}</arg>
+</arguments>
+<msg timestamp="20190507 11:00:52.644" level="INFO">Typing text 'SalmaBadr#' into text field 'password'.</msg>
+<status status="PASS" endtime="20190507 11:00:52.817" starttime="20190507 11:00:52.644"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:00:52.818" starttime="20190507 11:00:52.404"></status>
+</kw>
+<kw name="Click On Login" library="login">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${loginButton}</arg>
+</arguments>
+<msg timestamp="20190507 11:00:52.820" level="INFO">Clicking button 'xpath=//*[@id="loginfrm"]/button'.</msg>
+<status status="PASS" endtime="20190507 11:00:53.004" starttime="20190507 11:00:52.819"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 11:01:03.005" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 11:01:03.005" starttime="20190507 11:00:53.005"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:01:03.005" starttime="20190507 11:00:52.819"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${loginFaliure}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 11:01:03.054" level="INFO">Current page contains text 'Invalid Email or Password'.</msg>
+<status status="PASS" endtime="20190507 11:01:03.054" starttime="20190507 11:01:03.011"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:01:03.055" starttime="20190507 11:01:03.007"></status>
+</kw>
+<kw type="teardown" name="End Login Test" library="common">
+<kw name="Capture screenshot" library="helpers">
+<arguments>
+<arg>login</arg>
+</arguments>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<status status="PASS" endtime="20190507 11:01:03.058" starttime="20190507 11:01:03.058"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:01:03.058" starttime="20190507 11:01:03.057"></status>
+</kw>
+<kw name="Close Web Browser" library="helpers">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190507 11:01:06.444" starttime="20190507 11:01:03.059"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:01:06.444" starttime="20190507 11:01:03.059"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:01:06.444" starttime="20190507 11:01:03.056"></status>
+</kw>
+<doc>Login with a non registered email address</doc>
+<status status="PASS" endtime="20190507 11:01:06.445" critical="yes" starttime="20190507 11:00:34.723"></status>
+</test>
+<test id="s1-s2-t4" name="Verify not accepting login with wrong password">
+<kw type="setup" name="Begin Login Test" library="common">
+<kw name="Open Web Browser" library="helpers">
+<arguments>
+<arg>${loginPage}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190507 11:01:06.454" level="INFO">Opening browser 'chrome' to base url 'https://www.phptravels.net/login'.</msg>
+<status status="PASS" endtime="20190507 11:01:18.804" starttime="20190507 11:01:06.453"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190507 11:01:19.028" starttime="20190507 11:01:18.804"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:01:19.028" starttime="20190507 11:01:06.452"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:01:19.028" starttime="20190507 11:01:06.451"></status>
+</kw>
+<kw name="Input Login Form Fields" library="login">
+<arguments>
+<arg>${validEmail}</arg>
+<arg>@{validpassword}[1]</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LoginEmailField}</arg>
+<arg>${emailValue}</arg>
+</arguments>
+<msg timestamp="20190507 11:01:19.034" level="INFO">Typing text 'testing@gmail.com' into text field 'username'.</msg>
+<status status="PASS" endtime="20190507 11:01:20.148" starttime="20190507 11:01:19.033"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LoginPasswordField}</arg>
+<arg>${passwordValue}</arg>
+</arguments>
+<msg timestamp="20190507 11:01:20.149" level="INFO">Typing text 'Testing$' into text field 'password'.</msg>
+<status status="PASS" endtime="20190507 11:01:20.334" starttime="20190507 11:01:20.148"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:01:20.335" starttime="20190507 11:01:19.032"></status>
+</kw>
+<kw name="Click On Login" library="login">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${loginButton}</arg>
+</arguments>
+<msg timestamp="20190507 11:01:20.338" level="INFO">Clicking button 'xpath=//*[@id="loginfrm"]/button'.</msg>
+<status status="PASS" endtime="20190507 11:01:20.516" starttime="20190507 11:01:20.337"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 11:01:30.517" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 11:01:30.517" starttime="20190507 11:01:20.516"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:01:30.517" starttime="20190507 11:01:20.336"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${loginFaliure}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 11:01:30.542" level="INFO">Current page contains text 'Invalid Email or Password'.</msg>
+<status status="PASS" endtime="20190507 11:01:30.542" starttime="20190507 11:01:30.518"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:01:30.542" starttime="20190507 11:01:30.518"></status>
+</kw>
+<kw type="teardown" name="End Login Test" library="common">
+<kw name="Capture screenshot" library="helpers">
+<arguments>
+<arg>login</arg>
+</arguments>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<status status="PASS" endtime="20190507 11:01:30.545" starttime="20190507 11:01:30.544"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:01:30.545" starttime="20190507 11:01:30.543"></status>
+</kw>
+<kw name="Close Web Browser" library="helpers">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190507 11:01:33.115" starttime="20190507 11:01:30.545"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:01:33.116" starttime="20190507 11:01:30.545"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:01:33.117" starttime="20190507 11:01:30.543"></status>
+</kw>
+<doc>Login with wrong password</doc>
+<status status="PASS" endtime="20190507 11:01:33.120" critical="yes" starttime="20190507 11:01:06.450"></status>
+</test>
+<test id="s1-s2-t5" name="Verify allowing only Gmail email addresses">
+<kw type="setup" name="Begin Login Test" library="common">
+<kw name="Open Web Browser" library="helpers">
+<arguments>
+<arg>${loginPage}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190507 11:01:33.158" level="INFO">Opening browser 'chrome' to base url 'https://www.phptravels.net/login'.</msg>
+<status status="PASS" endtime="20190507 11:01:44.809" starttime="20190507 11:01:33.153"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190507 11:01:44.967" starttime="20190507 11:01:44.810"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:01:44.968" starttime="20190507 11:01:33.147"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:01:44.968" starttime="20190507 11:01:33.142"></status>
+</kw>
+<kw name="Input Login Form Fields" library="login">
+<arguments>
+<arg>@{nonGmail}[0]</arg>
+<arg>@{validpassword}[0]</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LoginEmailField}</arg>
+<arg>${emailValue}</arg>
+</arguments>
+<msg timestamp="20190507 11:01:44.972" level="INFO">Typing text 'testing@hotmail.com' into text field 'username'.</msg>
+<status status="PASS" endtime="20190507 11:01:45.212" starttime="20190507 11:01:44.972"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LoginPasswordField}</arg>
+<arg>${passwordValue}</arg>
+</arguments>
+<msg timestamp="20190507 11:01:45.213" level="INFO">Typing text 'SalmaBadr#' into text field 'password'.</msg>
+<status status="PASS" endtime="20190507 11:01:45.380" starttime="20190507 11:01:45.212"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:01:45.380" starttime="20190507 11:01:44.971"></status>
+</kw>
+<kw name="Click On Login" library="login">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${loginButton}</arg>
+</arguments>
+<msg timestamp="20190507 11:01:45.381" level="INFO">Clicking button 'xpath=//*[@id="loginfrm"]/button'.</msg>
+<status status="PASS" endtime="20190507 11:01:45.487" starttime="20190507 11:01:45.381"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 11:01:55.488" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 11:01:55.489" starttime="20190507 11:01:45.488"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:01:55.490" starttime="20190507 11:01:45.381"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${nonGmailError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 11:01:58.752" level="FAIL">Page should have contained text 'Only Gmail email addresses are allowed' but did not.</msg>
+<status status="FAIL" endtime="20190507 11:01:58.752" starttime="20190507 11:01:55.494"></status>
+</kw>
+<status status="FAIL" endtime="20190507 11:01:58.752" starttime="20190507 11:01:55.492"></status>
+</kw>
+<kw type="teardown" name="End Login Test" library="common">
+<kw name="Capture screenshot" library="helpers">
+<arguments>
+<arg>login</arg>
+</arguments>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<msg timestamp="20190507 11:01:59.329" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Results/Screenshots/login/Verify%20allowing%20only%20Gmail%20email%20addresses-Failed.png"&gt;&lt;img src="../Results/Screenshots/login/Verify%20allowing%20only%20Gmail%20email%20addresses-Failed.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190507 11:01:59.331" starttime="20190507 11:01:58.754"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:01:59.331" starttime="20190507 11:01:58.753"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:01:59.331" starttime="20190507 11:01:58.753"></status>
+</kw>
+<kw name="Close Web Browser" library="helpers">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190507 11:02:02.251" starttime="20190507 11:01:59.331"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:02:02.252" starttime="20190507 11:01:59.331"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:02:02.253" starttime="20190507 11:01:58.753"></status>
+</kw>
+<doc>Login with a non Gmail email address</doc>
+<status status="FAIL" endtime="20190507 11:02:02.255" critical="yes" starttime="20190507 11:01:33.134">Page should have contained text 'Only Gmail email addresses are allowed' but did not.</status>
+</test>
+<test id="s1-s2-t6" name="Verify not accepting invalid email address formats">
+<kw type="setup" name="Begin Login Test" library="common">
+<kw name="Open Web Browser" library="helpers">
+<arguments>
+<arg>${loginPage}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190507 11:02:02.288" level="INFO">Opening browser 'chrome' to base url 'https://www.phptravels.net/login'.</msg>
+<status status="PASS" endtime="20190507 11:02:14.429" starttime="20190507 11:02:02.286"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190507 11:02:14.555" starttime="20190507 11:02:14.429"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:02:14.555" starttime="20190507 11:02:02.283"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:02:14.556" starttime="20190507 11:02:02.275"></status>
+</kw>
+<kw name="Generate Invalid Test Email" library="helpers">
+<assign>
+<var>${specialCharsEmail}</var>
+</assign>
+<kw name="Split String" library="String">
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<arguments>
+<arg>${GMAIL}</arg>
+<arg>@</arg>
+</arguments>
+<assign>
+<var>@{words}</var>
+</assign>
+<msg timestamp="20190507 11:02:14.559" level="INFO">@{words} = [ testing | gmail.com ]</msg>
+<status status="PASS" endtime="20190507 11:02:14.559" starttime="20190507 11:02:14.558"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>5</arg>
+<arg>$&amp;*%^!#</arg>
+</arguments>
+<assign>
+<var>${specialChars}</var>
+</assign>
+<msg timestamp="20190507 11:02:14.560" level="INFO">${specialChars} = ##&amp;$#</msg>
+<status status="PASS" endtime="20190507 11:02:14.560" starttime="20190507 11:02:14.559"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>@{words}[0]${specialChars}@gmail.com</arg>
+</arguments>
+<assign>
+<var>${email}</var>
+</assign>
+<msg timestamp="20190507 11:02:14.561" level="INFO">${email} = testing##&amp;$#@gmail.com</msg>
+<status status="PASS" endtime="20190507 11:02:14.561" starttime="20190507 11:02:14.561"></status>
+</kw>
+<msg timestamp="20190507 11:02:14.563" level="INFO">${specialCharsEmail} = testing##&amp;$#@gmail.com</msg>
+<status status="PASS" endtime="20190507 11:02:14.563" starttime="20190507 11:02:14.557"></status>
+</kw>
+<kw name="Input Login Form Fields" library="login">
+<arguments>
+<arg>${specialCharsEmail}</arg>
+<arg>@{validPassword}[0]</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LoginEmailField}</arg>
+<arg>${emailValue}</arg>
+</arguments>
+<msg timestamp="20190507 11:02:14.567" level="INFO">Typing text 'testing##&amp;$#@gmail.com' into text field 'username'.</msg>
+<status status="PASS" endtime="20190507 11:02:15.111" starttime="20190507 11:02:14.566"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LoginPasswordField}</arg>
+<arg>${passwordValue}</arg>
+</arguments>
+<msg timestamp="20190507 11:02:15.111" level="INFO">Typing text 'SalmaBadr#' into text field 'password'.</msg>
+<status status="PASS" endtime="20190507 11:02:15.384" starttime="20190507 11:02:15.111"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:02:15.384" starttime="20190507 11:02:14.565"></status>
+</kw>
+<kw name="Click On Login" library="login">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${loginButton}</arg>
+</arguments>
+<msg timestamp="20190507 11:02:15.390" level="INFO">Clicking button 'xpath=//*[@id="loginfrm"]/button'.</msg>
+<status status="PASS" endtime="20190507 11:02:15.556" starttime="20190507 11:02:15.389"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 11:02:25.556" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 11:02:25.557" starttime="20190507 11:02:15.556"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:02:25.557" starttime="20190507 11:02:15.388"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${invalidMailError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 11:02:25.796" level="FAIL">Page should have contained text 'The Email field must contain a valid email address' but did not.</msg>
+<status status="FAIL" endtime="20190507 11:02:25.797" starttime="20190507 11:02:25.563"></status>
+</kw>
+<status status="FAIL" endtime="20190507 11:02:25.798" starttime="20190507 11:02:25.560"></status>
+</kw>
+<kw type="teardown" name="End Login Test" library="common">
+<kw name="Capture screenshot" library="helpers">
+<arguments>
+<arg>login</arg>
+</arguments>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<msg timestamp="20190507 11:02:26.298" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Results/Screenshots/login/Verify%20not%20accepting%20invalid%20email%20address%20formats-Failed.png"&gt;&lt;img src="../Results/Screenshots/login/Verify%20not%20accepting%20invalid%20email%20address%20formats-Failed.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190507 11:02:26.298" starttime="20190507 11:02:25.806"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:02:26.298" starttime="20190507 11:02:25.804"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:02:26.299" starttime="20190507 11:02:25.802"></status>
+</kw>
+<kw name="Close Web Browser" library="helpers">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190507 11:02:29.023" starttime="20190507 11:02:26.299"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:02:29.024" starttime="20190507 11:02:26.299"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:02:29.025" starttime="20190507 11:02:25.801"></status>
+</kw>
+<doc>Login with invalid format for email address</doc>
+<status status="FAIL" endtime="20190507 11:02:29.027" critical="yes" starttime="20190507 11:02:02.269">Page should have contained text 'The Email field must contain a valid email address' but did not.</status>
+</test>
+<test id="s1-s2-t7" name="Verify not accepting invalid format for password field value">
+<kw type="setup" name="Begin Login Test" library="common">
+<kw name="Open Web Browser" library="helpers">
+<arguments>
+<arg>${loginPage}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190507 11:02:29.071" level="INFO">Opening browser 'chrome' to base url 'https://www.phptravels.net/login'.</msg>
+<status status="PASS" endtime="20190507 11:02:43.025" starttime="20190507 11:02:29.069"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190507 11:02:43.154" starttime="20190507 11:02:43.026"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:02:43.154" starttime="20190507 11:02:29.065"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:02:43.155" starttime="20190507 11:02:29.062"></status>
+</kw>
+<kw name="Input Login Form Fields" library="login">
+<arguments>
+<arg>${validEmail}</arg>
+<arg>@{invalidPassword}[4]</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LoginEmailField}</arg>
+<arg>${emailValue}</arg>
+</arguments>
+<msg timestamp="20190507 11:02:43.157" level="INFO">Typing text 'testing@gmail.com' into text field 'username'.</msg>
+<status status="PASS" endtime="20190507 11:02:43.336" starttime="20190507 11:02:43.156"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LoginPasswordField}</arg>
+<arg>${passwordValue}</arg>
+</arguments>
+<msg timestamp="20190507 11:02:43.337" level="INFO">Typing text 'test12' into text field 'password'.</msg>
+<status status="PASS" endtime="20190507 11:02:43.468" starttime="20190507 11:02:43.337"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:02:43.468" starttime="20190507 11:02:43.155"></status>
+</kw>
+<kw name="Click On Login" library="login">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${loginButton}</arg>
+</arguments>
+<msg timestamp="20190507 11:02:43.470" level="INFO">Clicking button 'xpath=//*[@id="loginfrm"]/button'.</msg>
+<status status="PASS" endtime="20190507 11:02:43.636" starttime="20190507 11:02:43.469"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 11:02:53.637" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 11:02:53.637" starttime="20190507 11:02:43.637"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:02:53.638" starttime="20190507 11:02:43.469"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${invalidPasswordError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 11:02:53.723" level="FAIL">Page should have contained text 'The Password field must have a capital letter, a small letter and a special character' but did not.</msg>
+<status status="FAIL" endtime="20190507 11:02:53.724" starttime="20190507 11:02:53.646"></status>
+</kw>
+<status status="FAIL" endtime="20190507 11:02:53.724" starttime="20190507 11:02:53.645"></status>
+</kw>
+<kw type="teardown" name="End Login Test" library="common">
+<kw name="Capture screenshot" library="helpers">
+<arguments>
+<arg>login</arg>
+</arguments>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<msg timestamp="20190507 11:02:54.152" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Results/Screenshots/login/Verify%20not%20accepting%20invalid%20format%20for%20password%20field%20value-Failed.png"&gt;&lt;img src="../Results/Screenshots/login/Verify%20not%20accepting%20invalid%20format%20for%20password%20field%20value-Failed.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190507 11:02:54.152" starttime="20190507 11:02:53.727"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:02:54.152" starttime="20190507 11:02:53.726"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:02:54.153" starttime="20190507 11:02:53.726"></status>
+</kw>
+<kw name="Close Web Browser" library="helpers">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190507 11:02:56.689" starttime="20190507 11:02:54.153"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:02:56.690" starttime="20190507 11:02:54.153"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:02:56.690" starttime="20190507 11:02:53.725"></status>
+</kw>
+<doc>Login with invalid password field</doc>
+<status status="FAIL" endtime="20190507 11:02:56.692" critical="yes" starttime="20190507 11:02:29.057">Page should have contained text 'The Password field must have a capital letter, a small letter and a special character' but did not.</status>
+</test>
+<test id="s1-s2-t8" name="Verify not accepting less than 6 characters for password field value">
+<kw type="setup" name="Begin Login Test" library="common">
+<kw name="Open Web Browser" library="helpers">
+<arguments>
+<arg>${loginPage}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190507 11:02:56.715" level="INFO">Opening browser 'chrome' to base url 'https://www.phptravels.net/login'.</msg>
+<status status="PASS" endtime="20190507 11:03:09.061" starttime="20190507 11:02:56.713"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190507 11:03:09.231" starttime="20190507 11:03:09.061"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:03:09.231" starttime="20190507 11:02:56.711"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:03:09.232" starttime="20190507 11:02:56.710"></status>
+</kw>
+<kw name="Input Login Form Fields" library="login">
+<arguments>
+<arg>${validEmail}</arg>
+<arg>@{invalidPassword}[1]</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LoginEmailField}</arg>
+<arg>${emailValue}</arg>
+</arguments>
+<msg timestamp="20190507 11:03:09.234" level="INFO">Typing text 'testing@gmail.com' into text field 'username'.</msg>
+<status status="PASS" endtime="20190507 11:03:09.623" starttime="20190507 11:03:09.234"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LoginPasswordField}</arg>
+<arg>${passwordValue}</arg>
+</arguments>
+<msg timestamp="20190507 11:03:09.624" level="INFO">Typing text '123' into text field 'password'.</msg>
+<status status="PASS" endtime="20190507 11:03:09.764" starttime="20190507 11:03:09.624"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:03:09.765" starttime="20190507 11:03:09.233"></status>
+</kw>
+<kw name="Click On Login" library="login">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${loginButton}</arg>
+</arguments>
+<msg timestamp="20190507 11:03:09.766" level="INFO">Clicking button 'xpath=//*[@id="loginfrm"]/button'.</msg>
+<status status="PASS" endtime="20190507 11:03:09.890" starttime="20190507 11:03:09.766"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 11:03:19.891" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 11:03:19.892" starttime="20190507 11:03:09.891"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:03:19.892" starttime="20190507 11:03:09.766"></status>
+</kw>
+<kw name="Check error message" library="helpers">
+<arguments>
+<arg>${shortPasswordError}</arg>
+</arguments>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${errorMessage}</arg>
+</arguments>
+<msg timestamp="20190507 11:03:20.125" level="FAIL">Page should have contained text 'The Password field must be at least 6 characters in length' but did not.</msg>
+<status status="FAIL" endtime="20190507 11:03:20.126" starttime="20190507 11:03:19.898"></status>
+</kw>
+<status status="FAIL" endtime="20190507 11:03:20.127" starttime="20190507 11:03:19.895"></status>
+</kw>
+<kw type="teardown" name="End Login Test" library="common">
+<kw name="Capture screenshot" library="helpers">
+<arguments>
+<arg>login</arg>
+</arguments>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<msg timestamp="20190507 11:03:20.651" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Results/Screenshots/login/Verify%20not%20accepting%20less%20than%206%20characters%20for%20password%20field%20value-Failed.png"&gt;&lt;img src="../Results/Screenshots/login/Verify%20not%20accepting%20less%20than%206%20characters%20for%20password%20field%20value-Failed.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190507 11:03:20.651" starttime="20190507 11:03:20.135"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:03:20.652" starttime="20190507 11:03:20.133"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:03:20.652" starttime="20190507 11:03:20.131"></status>
+</kw>
+<kw name="Close Web Browser" library="helpers">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190507 11:03:23.463" starttime="20190507 11:03:20.653"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:03:23.464" starttime="20190507 11:03:20.652"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:03:23.465" starttime="20190507 11:03:20.129"></status>
+</kw>
+<doc>Login with short length password field</doc>
+<status status="FAIL" endtime="20190507 11:03:23.470" critical="yes" starttime="20190507 11:02:56.708">Page should have contained text 'The Password field must be at least 6 characters in length' but did not.</status>
+</test>
+<test id="s1-s2-t9" name="Verify checking Remember me keeps user logged in">
+<kw type="setup" name="Begin Login Test" library="common">
+<kw name="Open Web Browser" library="helpers">
+<arguments>
+<arg>${loginPage}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190507 11:03:23.502" level="INFO">Opening browser 'chrome' to base url 'https://www.phptravels.net/login'.</msg>
+<status status="PASS" endtime="20190507 11:03:35.216" starttime="20190507 11:03:23.500"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190507 11:03:35.348" starttime="20190507 11:03:35.216"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:03:35.348" starttime="20190507 11:03:23.496"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:03:35.349" starttime="20190507 11:03:23.493"></status>
+</kw>
+<kw name="Input Login Form Fields" library="login">
+<arguments>
+<arg>${validEmail}</arg>
+<arg>@{validPassword}[0]</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LoginEmailField}</arg>
+<arg>${emailValue}</arg>
+</arguments>
+<msg timestamp="20190507 11:03:35.351" level="INFO">Typing text 'testing@gmail.com' into text field 'username'.</msg>
+<status status="PASS" endtime="20190507 11:03:35.543" starttime="20190507 11:03:35.350"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LoginPasswordField}</arg>
+<arg>${passwordValue}</arg>
+</arguments>
+<msg timestamp="20190507 11:03:35.544" level="INFO">Typing text 'SalmaBadr#' into text field 'password'.</msg>
+<status status="PASS" endtime="20190507 11:03:35.735" starttime="20190507 11:03:35.543"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:03:35.735" starttime="20190507 11:03:35.349"></status>
+</kw>
+<kw name="Check &quot;Remember Me&quot;" library="login">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<doc>Selects checkbox identified by ``locator``.</doc>
+<arguments>
+<arg>${rememberMeField}</arg>
+</arguments>
+<msg timestamp="20190507 11:03:35.737" level="INFO">Selecting checkbox '//*[@id="remember-me"]'.</msg>
+<status status="PASS" endtime="20190507 11:03:35.893" starttime="20190507 11:03:35.736"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:03:35.893" starttime="20190507 11:03:35.736"></status>
+</kw>
+<kw name="Click On Login" library="login">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${loginButton}</arg>
+</arguments>
+<msg timestamp="20190507 11:03:35.895" level="INFO">Clicking button 'xpath=//*[@id="loginfrm"]/button'.</msg>
+<status status="PASS" endtime="20190507 11:03:36.067" starttime="20190507 11:03:35.895"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190507 11:03:46.068" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190507 11:03:46.068" starttime="20190507 11:03:36.068"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:03:46.068" starttime="20190507 11:03:35.894"></status>
+</kw>
+<kw name="Close Web Browser" library="helpers">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190507 11:03:48.971" starttime="20190507 11:03:46.070"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:03:48.972" starttime="20190507 11:03:46.069"></status>
+</kw>
+<kw name="Open Web Browser" library="helpers">
+<arguments>
+<arg>${loginPage}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190507 11:03:48.973" level="INFO">Opening browser 'chrome' to base url 'https://www.phptravels.net/login'.</msg>
+<status status="PASS" endtime="20190507 11:04:01.295" starttime="20190507 11:03:48.973"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190507 11:04:01.415" starttime="20190507 11:04:01.295"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:04:01.416" starttime="20190507 11:03:48.972"></status>
+</kw>
+<kw name="Check Current URL" library="helpers">
+<arguments>
+<arg>${accountPage}</arg>
+</arguments>
+<kw name="Get Location" library="SeleniumLibrary">
+<doc>Returns the current browser URL.</doc>
+<assign>
+<var>${currentURL}</var>
+</assign>
+<msg timestamp="20190507 11:04:01.424" level="INFO">${currentURL} = https://www.phptravels.net/login</msg>
+<status status="PASS" endtime="20190507 11:04:01.424" starttime="20190507 11:04:01.417"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${currentURL}</arg>
+</arguments>
+<msg timestamp="20190507 11:04:01.425" level="FAIL">https://www.phptravels.net/account/ != https://www.phptravels.net/login</msg>
+<status status="FAIL" endtime="20190507 11:04:01.425" starttime="20190507 11:04:01.424"></status>
+</kw>
+<status status="FAIL" endtime="20190507 11:04:01.426" starttime="20190507 11:04:01.416"></status>
+</kw>
+<kw type="teardown" name="End Login Test" library="common">
+<kw name="Capture screenshot" library="helpers">
+<arguments>
+<arg>login</arg>
+</arguments>
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<arguments>
+<arg>Capture Page Screenshot</arg>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>../Results/Screenshots/${folderName}/${TEST NAME}-Failed.png</arg>
+</arguments>
+<msg timestamp="20190507 11:04:02.386" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Results/Screenshots/login/Verify%20checking%20Remember%20me%20keeps%20user%20logged%20in-Failed.png"&gt;&lt;img src="../Results/Screenshots/login/Verify%20checking%20Remember%20me%20keeps%20user%20logged%20in-Failed.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190507 11:04:02.386" starttime="20190507 11:04:01.429"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:04:02.386" starttime="20190507 11:04:01.428"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:04:02.387" starttime="20190507 11:04:01.428"></status>
+</kw>
+<kw name="Close Web Browser" library="helpers">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190507 11:04:04.919" starttime="20190507 11:04:02.387"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:04:04.920" starttime="20190507 11:04:02.387"></status>
+</kw>
+<status status="PASS" endtime="20190507 11:04:04.921" starttime="20190507 11:04:01.427"></status>
+</kw>
+<doc>Login with valid email and password and checking Remember me checkbox and navigating to login page should redirect user to his account page</doc>
+<status status="FAIL" endtime="20190507 11:04:04.924" critical="yes" starttime="20190507 11:03:23.485">https://www.phptravels.net/account/ != https://www.phptravels.net/login</status>
+</test>
+<doc>Login Test Suite</doc>
+<status status="FAIL" endtime="20190507 11:04:04.955" starttime="20190507 10:59:40.282"></status>
+</suite>
+<status status="FAIL" endtime="20190507 11:04:05.024" starttime="20190507 10:51:35.841"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="15" pass="7">Critical Tests</stat>
+<stat fail="15" pass="7">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="1">Smoke</stat>
+</tag>
+<suite>
+<stat fail="15" id="s1" name="Tests" pass="7">Tests</stat>
+<stat fail="9" id="s1-s1" name="Suite1-register" pass="4">Tests.Suite1-register</stat>
+<stat fail="6" id="s1-s2" name="Suite2-login" pass="3">Tests.Suite2-login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
